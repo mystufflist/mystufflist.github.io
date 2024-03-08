@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrismas List 2023</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('Background.png');
+      /* Replace with your actual background image URL */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #000;
+      /* Set text color to white for better visibility on the background */
+
+
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navbar a.selected {
+      background-color: #fff;
+      color: black;
+    }
+
+        .switch {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        .switch-label {
+            margin-right: 5px;
+        }
+
+
+
+
+    .product-container {
+      max-width: 800px;
+      /* Increased max-width */
+      margin: 20px auto;
+      background-color: rgba(0, 0, 0, 0.8); /* Darker background color */
+      padding: 30px;
+      /* Increased padding */
+      border-radius: 8px;
+      /* Increased border radius */
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+	  color: #fff; /* Set text color to white */
+    }
+
+    .product-title {
+      font-size: 24px;
+      /* Increased font size */
+      font-weight: bold;
+      margin-bottom: 15px;
+      /* Increased margin */
+    }
+
+    .product-link {
+      text-decoration: none;
+      color: #0066c0;
+      font-size: 18px;
+      /* Increased font size */
+    }
+
+    .product-description {
+      margin-bottom: 15px;
+      /* Increased margin */
+      font-size: 18px;
+      /* Increased font size */
+    }
+
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      max-height: 170px;
+      /* Set a maximum height for the images */
+      margin-bottom: 15px;
+      /* Increased margin */
+    }
+	        .product-title-rainbow {
+            background-image: linear-gradient(to right, #ffca28, #ff7043); /* Yellow to deep orange */
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+    .product-price {
+      color: #0b8c01;
+      font-size: 20px;
+      /* Increased font size */
+      font-weight: bold;
+    }
+
+    .interest-extreme {
+      color: #d10f0f;
+      /* Discount color */
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .checkmark {
+      color: #4CAF50;
+      /* Checkmark color */
+      font-size: 30px;
+      margin-right: 5px;
+    }
+
+    .kindacheckmark {
+      color: #ffc823;
+      /* Kinda Checkmark color */
+      font-size: 30px;
+      margin-right: 5px;
+    }
+
+    hr {
+      border: 0;
+      border-top: 2px solid #ddd;
+      /* Increased border-top */
+      margin: 20px 0;
+      /* Increased margin */
+    }
+
+    .footer {
+      color: red;
+      font-size: 14px;
+      /* Decreased font size */
+      width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Popup Styling */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    .popup-content {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .popup-close {
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="" class="selected">Home</a>
+    <a href="Read Me.html">Read Me</a>
+    <a href="Stuff i got.html">Stuff i got</a>
+	<a href="Computer.html">Computer List</a>
+    <!-- Add more links as needed -->
+  </div>
+      
+	  <!-- Dark/Light Mode Switch -->
+    <div class="switch">
+        <span class="switch-label">Light/Dark</span>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+            <span class="slider round"></span>
+        </label>
+        <span class="switch-label">Mode</span>
+    </div>
+</div>
+
+  <!-- Popup for new users -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="popup-close" onclick="closePopup()">&times;</span>
+      <p>Found new domain</p>
+    </div>
+  </div>
+  <!-- Scrap stuff -->
+
+  <!--  <div class="interest-extreme">Interest: EXTREMELY!!!!</div>  -->
+
+  <!-- I was about to add a rainbow text but its has a bugs where the image go to the right in not in the left so it has to be scrap until i figure out how to fix it -->
+  <!-- This is to show how interest im wanting that but Its got Scrap -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- End -->
+
+
+  <!-- The Product I wanted here -->
+
+
+  <div class="product-container">
+	    <div class="product-title">TP-Link USB to Ethernet Adapter</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/I/51Qc9qkzuHL._AC_SL1500_.jpg"
+      alt="TP-Link USB to Ethernet Adapter">
+    <div class="product-description">Before i get to start putting it arpart i need this to game
+      <p><a class="product-link" href="https://a.co/d/h0UiUhs">https://a.co/d/h0UiUhs</a></p>
+    </div>
+    <div class="product-price">$14.99</div>
+    <hr>
+	
+	<div class="product-title">ARCTIC MX-4 - Premium Performance Thermal Paste</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61fpmJ4k5aL._AC_SL1500_.jpg"
+      alt="Thermal Paste">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/6zVP2z2">https://a.co/d/6zVP2z2</a></p>
+    </div>
+    <div class="product-price">$6.97</div>
+    <hr>
+	
+    <div class="product-title">SHANGZHAOYUAN B85M PRO LGA 1150 Motherboard</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81pUruahDLL._AC_SL1500_.jpg"
+      alt="SHANGZHAOYUAN B85M PRO LGA 1150 Motherboard">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/dxTY1ee">https://a.co/d/dxTY1ee</a></p>
+    </div>
+    <div class="product-price">$82.99</div>
+    <hr>
++		
+		<div class="product-title">Western Digital 500GB SSD</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71HpqY5AJLL._AC_SL1500_.jpg"
+      alt="SSD">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/iT4E8Ys">https://a.co/d/iT4E8Ys</a></p>
+    </div>
+    <div class="product-price">$33.00</div>
+    <hr>
+
+OR
+
+			    <div class="product-title">MACHINIST LGA 1150 Motherboard</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81Kj9LJQodL._AC_SL1500_.jpg"
+      alt="Cheaper Motherboard">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/1MXAdRh">https://a.co/d/1MXAdRh</a></p>
+    </div>
+    <div class="product-price">$79.99</div>
+    <hr>
++			
+			<div class="product-title">Western Digital 500GB SATA M.2</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61B1nRqZWTL._AC_SL1500_.jpg"
+      alt="Western Digital 500GB">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/6hXmAL8">https://a.co/d/6hXmAL8</a></p>
+    </div>
+    <div class="product-price">$39.99</div>
+    <hr>
+
+	
+		    <div class="product-title">Thermalright CPU Fan</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71j6VKsz-fL._SL1500_.jpg"
+      alt="CPU Fan">
+    <div class="product-description"> Need It for the new Motherboard
+      <p><a class="product-link" href="https://a.co/d/5hOqZV3">https://a.co/d/5hOqZV3</a></p>
+    </div>
+    <div class="product-price">$33.90</div>
+    <hr>
+	
+	    <div class="product-title">Thermaltake Smart 500W Power supply</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71Skecnsn-L._AC_SL1500_.jpg"
+      alt="Power Supply">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/dBaeuCO">https://a.co/d/dBaeuCO</a></p>
+    </div>
+    <div class="product-price">$39.95</div>
+    <hr>
+
+<iframe src="https://store.steampowered.com/widget/2287520/" frameborder="0" width="646" height="190"></iframe>
+    <div class="product-description">Need some New Games TOO!!
+    </div>
+    <hr>
+	
+	<iframe src="https://store.steampowered.com/widget/322170/" frameborder="0" width="646" height="190"></iframe>
+    <div class="product-description">Need some New Games TOO!!. + its for $2 
+    </div>
+    <hr>
+
+    <div class="product-title"><span class="checkmark">&#10004;</span>Antec NX4 ATX Mid-Tower Case</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81-Cz+0RUCL._AC_SL1500_.jpg"
+      alt="Antec NX4 Image">
+    <div class="product-description">The NX410 Black mid-tower gaming case effortlessly combines a bevy of in-demand
+      features: USB 3.0 connectivity, ample storage drive bays, room for expansion, and includes one ARGB LED fans in
+      both front and rear. With support for up to a 360 mm liquid cooling radiator in front and 280mm on top, NX410
+      Black is easy to build with and easy to cool.
+      <p><a class="product-link" href="https://a.co/d/26CzDnV">https://a.co/d/26CzDnV</a></p>
+    </div>
+    <div class="product-price">$69.99</div>
+    <hr>
+    OR
+    <div class="product-title">CORSAIR 4000D AIRFLOW</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61Tf0BqsGwL._AC_SL1200_.jpg"
+      alt="Corsair 4000D Airflow Image">
+    <div class="product-description">The CORSAIR 4000D AIRFLOW is a mid-tower ATX case with easy cable management and
+      exceptional cooling. A steel front panel offers optimal airflow to your components, accompanied by two included
+      120mm AirGuide fans designed with anti-vortex vanes that enhance cooling. The CORSAIR RapidRoute cable management
+      system makes it effortless to route major cables through a single channel, with 25mm of routing depth.
+      <p><a class="product-link" href="https://a.co/d/59XXL2W">https://a.co/d/59XXL2W</a></p>
+    </div>
+    <div class="product-price">$104.99</div>
+    <hr>
+
+    <div class="product-title">Logitech G PRO X Gaming Headset (2nd Generation)</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51j6CXF9DYL._AC_SL1000_.jpg"
+      alt="Logitech G PRO X Gaming Headset (2nd Generation)">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/8gtzZ9m">https://a.co/d/8gtzZ9m</a></p>
+    </div>
+    <div class="product-price">SOLD OUT</div>
+    <hr>
+    OR
+    <div class="product-title"><span class="kindacheckmark">&#10004;</span>HyperX Cloud Core – Wireless Gaming Headset
+    </div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61flgQb9s1L._AC_SL1500_.jpg"
+      alt="Logitech G PRO X Gaming Headset (2nd Generation)">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/cD4hf19">https://a.co/d/cD4hf19</a></p>
+    </div>
+    <div class="product-price">$94.99</div>
+    <hr>
+
+    <div class="product-title"><span class="checkmark">&#10004;</span>Xbox Special Edition Wireless Controller – Remix –
+      (Includes Xbox Rechargeable Battery Pack)</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61gheawVmAL._SL1500_.jpg" alt="Xbox Special Edition Wireless Controller – Remix –
+(Includes Xbox Rechargeable Battery Pack)">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/cB8s5Mm">https://a.co/d/cB8s5Mm</a></p>
+    </div>
+    <div class="product-price">$71.99</div>
+    <hr>
+    OR
+    <div class="product-title">Xbox Core Wireless Gaming Controller</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61h4J5s0pBL._SL1500_.jpg"
+      alt="Xbox Core Wireless Gaming Controller">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/eNZFlVg">https://a.co/d/eNZFlVg</a></p>
+    </div>
+    <div class="product-price">$54.00</div>
+    <hr>
+
+    <div class="product-title">Cat 8 Ethernet Cable 150 FT</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71J8kk1c-wL._AC_SL1500_.jpg"
+      alt="Cat 8 Ethernet Cable 150 FT">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/cTBc60K">https://a.co/d/cTBc60K</a></p>
+    </div>
+    <div class="product-price">$49.99</div>
+    <hr>
+
+    <div class="product-title">TP-Link USB Bluetooth Adapter</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51SI0Zaj1lL._AC_SL1489_.jpg"
+      alt="TP-Link USB Bluetooth Adapter">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/7PYVAfW">https://a.co/d/7PYVAfW</a></p>
+    </div>
+    <div class="product-price">$12.97</div>
+    <hr>
+
+    <div class="product-title">Fortnite V-Bucks Gift Card</div>
+    <img class="product-image" src="V bucks.png" alt="V-Bucks">
+    <div class="product-description">Buy me any V-Bucks Gift Cards Don't care if its 1,000, 2800, 5000, 13500, V-bucks.
+      Just gift me any V-Bucks card
+      <p><a class="product-link"
+          href="https://www.target.com/p/fortnite-v-bucks-gift-card-digital/-/A-87469570?preselect=87345546">https://www.target.com/p/fortnite-v-bucks-gift-card-digital/-/A-87469570?preselect=87345546</a>
+      </p>
+    </div>
+    <div class="product-price">Green Card $8.99 | Blue Card $22.99 | Purple Card $36.99 | GOLD Card $89.99</div>
+    <hr>
+    <div class="product-title">Blue Yeti Microphone</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61egnO8q6ZL._AC_SL1500_.jpg"
+      alt="Blue Yeti Microphone">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/1bMtpTf">https://a.co/d/1bMtpTf</a></p>
+    </div>
+    <div class="product-price">$89.99</div>
+    <hr>
+
+    <div class="product-title">Blue Yeti Microphone POP Filter</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/711pQt7HPsL._AC_SL1500_.jpg"
+      alt="Blue Yeti Microphone POP Filter">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/3lPlJpr">https://a.co/d/3lPlJpr</a></p>
+    </div>
+    <div class="product-price">$17.99</div>
+    <hr>
+
+    <div class="product-title">Steam Gift Cards</div>
+    <img class="product-image" src="https://store.cloudflare.steamstatic.com/public/images/gift/steamcards_cards_02.png"
+      alt="Steam Gift Cards">
+    <div class="product-description">
+      <p><a class="product-link"
+          href="https://help.steampowered.com/en/faqs/view/5BB2-E986-A733-CF0E">https://help.steampowered.com/en/faqs/view/5BB2-E986-A733-CF0E</a>
+      </p>
+    </div>
+    <div class="product-price">$20.00 | $50.00 | $100.00</div>
+    <hr>
+
+    <div class="product-title"><span class="checkmark">&#10004;</span>UGREEN RG 65W USB C Charger</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51++sBhA2AL._AC_SL1500_.jpg"
+      alt="UGREEN RG 65W USB C Charger">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/in9VeoR">https://a.co/d/in9VeoR</a></p>
+    </div>
+    <div class="product-price">$37.49</div>
+    <hr>
+
+    <div class="product-title">UGREEN Lightning Cable</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61FCW0Te9iL._AC_SL1500_.jpg"
+      alt="UGREEN Lightning Cable">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/4lLevlX">https://a.co/d/4lLevlX</a></p>
+    </div>
+    <div class="product-price">$17.99</div>
+    <hr>
+
+    <div class="product-title">Timetec 32GB KIT(4x8GB) DDR3L</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71WXdUVjuVL._AC_SL1500_.jpg"
+      alt="Timetec 32GB KIT(4x8GB) DDR3L">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/ipLeHcg">https://a.co/d/ipLeHcg</a></p>
+    </div>
+    <div class="product-price">$38.99</div>
+    <hr>
+
+    <div class="product-title">Steam Deck OLED</div>
+    <img class="product-image"
+      src="https://clan.cloudflare.steamstatic.com/images//39049601/e54b85b6e75bc7ec589372474ef1705b3471bb66.png"
+      alt="Steam Deck">
+    <div class="product-description">
+      <p><a class="product-link"
+          href="https://store.steampowered.com/steamdeck">https://store.steampowered.com/steamdeck</a></p>
+    </div>
+    <div class="product-price">$549.00</div>
+    <hr>
+
+    OR
+    <div class="product-title">Steam Deck</div>
+    <img class="product-image"
+      src="https://clan.cloudflare.steamstatic.com/images//39049601/e54b85b6e75bc7ec589372474ef1705b3471bb66.png"
+      alt="Steam Deck">
+    <div class="product-description">
+      <p><a class="product-link"
+          href="https://store.steampowered.com/steamdeck">https://store.steampowered.com/steamdeck</a></p>
+    </div>
+    <div class="product-price">$399.00 | $349.00</div>
+    <hr>
+
+    <div class="product-title">Intel Core i7-4790 Processor</div>
+    <img class="product-image" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51k9DlVz1QL._AC_.jpg"
+      alt="ICi7">
+    <div class="product-description">
+      Refurbished
+      <p><a class="product-link" href="https://a.co/d/3Fi0YER">https://a.co/d/3Fi0YER</a></p>
+      Brand NEW
+      <p><a class="product-link" href="https://a.co/d/etYEYdW">https://a.co/d/etYEYdW</a></p>
+    </div>
+    <div class="product-price">Refurbished $73.00 | Brand NEW $145.00</div>
+
+
+    <!-- Add more products as needed -->
+
+<!-- JavaScript to show the popup for new users and toggle dark mode -->
+<script>
+    // Function to show the popup if not shown before
+    function showPopup() {
+        const popupShown = localStorage.getItem('popupShown');
+        if (!popupShown) {
+            document.getElementById('popup').style.display = 'block';
+            localStorage.setItem('popupShown', true);
+        }
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+    // Show the popup when the page loads (for demonstration purposes)
+    window.onload = function () {
+        showPopup();
+    };
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+        const body = document.body;
+        const productContainer = document.querySelector('.product-container');
+        const darkModeToggle = document.getElementById('darkModeToggle');
+
+        if (darkModeToggle.checked) {
+            body.style.backgroundColor = '#cfcfcf'; // Light background color
+            body.style.color = '#000'; // Set text color to black
+            productContainer.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'; // Lighter product container
+        } else {
+            body.style.backgroundColor = 'url("Background.png")'; // Dark background image
+            body.style.color = '#2e2e2e'; // Set text color to white
+            productContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.8)'; // Darker product container
+        }
+    }
+</script>
+
+  </div>
+
+
+</body>
+
+</html>

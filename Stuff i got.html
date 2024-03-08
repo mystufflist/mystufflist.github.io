@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrismas List 2023</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Background.png'); /* Replace with your actual background image URL */
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			color: #000; /* Set text color to white for better visibility on the background */
+			
+
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.selected {
+            background-color: #fff;
+            color: black;
+        }
+
+
+
+		
+
+        .product-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background color */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            color: #fff; /* Set text color to white */
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .product-title {
+            font-size: 24px; /* Increased font size */
+            font-weight: bold;
+            margin-bottom: 15px; /* Increased margin */
+        }
+
+        .product-description {
+            margin-bottom: 15px; /* Increased margin */
+            font-size: 18px; /* Increased font size */
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            max-height: 170px; /* Set a maximum height for the images */
+            margin-bottom: 15px; /* Increased margin */
+        }
+
+        .checkmark {
+            color: #4CAF50; /* Checkmark color */
+            font-size: 30px;
+            margin-right: 5px;
+        }
+
+        .kindacheckmark {
+            color: #ffc823; /* Kinda Checkmark color */
+            font-size: 30px;
+            margin-right: 5px;
+        }
+		
+
+
+        hr {
+            border: 0;
+            border-top: 2px solid #000; /* Increased border-top */
+            margin: 20px 0; /* Increased margin */
+        }
+
+        .footer {
+            color: red;
+            font-size: 14px; /* Decreased font size */
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="Read Me.html">Read Me</a>
+    <a href="Stuff i got.html" class="selected">Stuff i got</a>
+	<a href="Computer.html">Computer List</a>
+    <!-- Add more links as needed -->
+</div>
+
+<!-- The Product I Got here -->
+
+
+<div class="product-container">
+    <div class="product-title"><span class="checkmark">&#10004;</span>Antec NX4 ATX Mid-Tower Case</div>
+    <img class="product-image" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81-Cz+0RUCL._AC_SL1500_.jpg" alt="Antec NX4 Image">
+    <div class="product-description">
+    </div>
+	
+	    <div class="product-title"><span class="kindacheckmark">&#10004;</span>HyperX Cloud Core – Wireless Gaming Headset</div>
+    <img class="product-image" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61flgQb9s1L._AC_SL1500_.jpg" alt="Logitech G PRO X Gaming Headset (2nd Generation)">
+    <div class="product-description">
+    </div>   
+
+		<div class="product-title"><span class="checkmark">&#10004;</span>Xbox Special Edition Wireless Controller – Remix –
+(Includes Xbox Rechargeable Battery Pack)</div>
+    <img class="product-image" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61gheawVmAL._SL1500_.jpg" alt="Xbox Special Edition Wireless Controller – Remix –
+(Includes Xbox Rechargeable Battery Pack)">
+    <div class="product-description">
+    </div>
+
+			
+			<div class="product-title"><span class="checkmark">&#10004;</span>UGREEN RG 65W USB C Charger</div>
+            <img class="product-image" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51++sBhA2AL._AC_SL1500_.jpg" alt="UGREEN RG 65W USB C Charger">
+            <div class="product-description">
+            </div>
+
+					
+    <!-- Add more products as needed -->
+	
+	<!-- JavaScript to show the popup for new users -->
+<script>
+    // Function to show the popup
+    function showPopup() {
+        document.getElementById('popup').style.display = 'block';
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+        // Store in local storage that the user has seen the popup
+        localStorage.setItem('popupSeen', 'true');
+    }
+
+    // Check if the user has already seen the popup
+    function checkPopup() {
+        var popupSeen = localStorage.getItem('popupSeen');
+        if (!popupSeen) {
+            showPopup();
+        }
+    }
+
+    // Show the popup when the page loads (for demonstration purposes)
+    window.onload = function () {
+        checkPopup();
+    };
+</script>
+
+</div>
+
+
+</body>
+</html>

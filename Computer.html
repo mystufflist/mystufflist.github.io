@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrismas List 2023</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('Background.png');
+      /* Replace with your actual background image URL */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #000;
+      /* Set text color to white for better visibility on the background */
+
+
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navbar a.selected {
+      background-color: #fff;
+      color: black;
+    }
+
+        .switch {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        .switch-label {
+            margin-right: 5px;
+        }
+
+
+
+
+    .product-container {
+      max-width: 800px;
+      /* Increased max-width */
+      margin: 20px auto;
+      background-color: rgba(0, 0, 0, 0.8); /* Darker background color */
+      padding: 30px;
+      /* Increased padding */
+      border-radius: 8px;
+      /* Increased border radius */
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+	  color: #fff; /* Set text color to white */
+    }
+
+    .product-title {
+      font-size: 24px;
+      /* Increased font size */
+      font-weight: bold;
+      margin-bottom: 15px;
+      /* Increased margin */
+    }
+
+    .product-link {
+      text-decoration: none;
+      color: #0066c0;
+      font-size: 18px;
+      /* Increased font size */
+    }
+
+    .product-description {
+      margin-bottom: 15px;
+      /* Increased margin */
+      font-size: 18px;
+      /* Increased font size */
+    }
+
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      max-height: 170px;
+      /* Set a maximum height for the images */
+      margin-bottom: 15px;
+      /* Increased margin */
+    }
+	        .product-title-rainbow {
+            background-image: linear-gradient(to right, #ffca28, #ff7043); /* Yellow to deep orange */
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+    .product-price {
+      color: #0b8c01;
+      font-size: 20px;
+      /* Increased font size */
+      font-weight: bold;
+    }
+
+    .interest-extreme {
+      color: #d10f0f;
+      /* Discount color */
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .checkmark {
+      color: #4CAF50;
+      /* Checkmark color */
+      font-size: 30px;
+      margin-right: 5px;
+    }
+
+    .kindacheckmark {
+      color: #ffc823;
+      /* Kinda Checkmark color */
+      font-size: 30px;
+      margin-right: 5px;
+    }
+
+    hr {
+      border: 0;
+      border-top: 2px solid #ddd;
+      /* Increased border-top */
+      margin: 20px 0;
+      /* Increased margin */
+    }
+
+    .footer {
+      color: red;
+      font-size: 14px;
+      /* Decreased font size */
+      width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Popup Styling */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    .popup-content {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .popup-close {
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+	<a href="index.html">Home</a>
+    <a href="Read Me.html">Read Me</a>
+    <a href="Stuff i got.html">Stuff i got</a>
+	<a href="" class="selected">Computer List</a>
+    <!-- Add more links as needed -->
+  </div>
+      
+	  <!-- Dark/Light Mode Switch -->
+    <div class="switch">
+        <span class="switch-label">Light/Dark</span>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+            <span class="slider round"></span>
+        </label>
+        <span class="switch-label">Mode</span>
+    </div>
+</div>
+
+  <!-- Popup for new users -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="popup-close" onclick="closePopup()">&times;</span>
+      <p>Compuer</p>
+    </div>
+  </div>
+  <!-- Scrap stuff -->
+
+  <!--  <div class="interest-extreme">Interest: EXTREMELY!!!!</div>  -->
+
+  <!-- I was about to add a rainbow text but its has a bugs where the image go to the right in not in the left so it has to be scrap until i figure out how to fix it -->
+  <!-- This is to show how interest im wanting that but Its got Scrap -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- End -->
+
+
+  <!-- The Product I wanted here -->
+
+
+  <div class="product-container">
+  	    
+		<div class="product-title">Click here for a list.</div>
+    <img class="product-image"
+      src=""
+      alt="">
+	<div class="product-description">
+      <p><a class="product-link" href="Computer_GI.html">List</a></p>
+    </div>
+    <div class="product-price"></div>
+    <hr>
+  
+	    <div class="product-title">Intel Core i5-12600K Desktop Processor</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/I/51QJsh7HAhL._AC_SL1000_.jpg"
+      alt="Intel Core i5-12600K">
+	<div class="product-description">This is on a Limited time deal so price will change to $189.99
+      <p><a class="product-link" href="https://a.co/d/bF65vWM">https://a.co/d/bF65vWM</a></p>
+    </div>
+    <div class="product-price">$169.96</div>
+    <hr>
+	
+	<div class="product-title">Thermalright Peerless Assassin 120 SE CPU Cooler</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71j6VKsz-fL._SL1500_.jpg"
+      alt="CPU Fan">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/377sTGy">https://a.co/d/377sTGy</a></p>
+    </div>
+    <div class="product-price">$33.90</div>
+    <hr>
+	
+		<div class="product-title">ASUS Prime B760-PLUS Intel B760(13th and 12th Gen) LGA1700 ATX Motherboard</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/I/91YlCRiI+9L._AC_SL1500_.jpg"
+      alt="Motherboard">
+    <div class="product-description">This is on a Discount so price will change to $164.99
+      <p><a class="product-link" href="https://a.co/d/2hR0qms">https://a.co/d/2hR0qms</a></p>
+    </div>
+    <div class="product-price">$99.99</div>
+    <hr>
+			<div class="product-title">CORSAIR VENGEANCE DDR5 RAM 16GB</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/I/61XAG0FT2ZL._AC_SL1500_.jpg"
+      alt="Motherboard">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/2s4AkSe">https://a.co/d/2s4AkSe</a></p>
+    </div>
+    <div class="product-price">$69.99</div>
+    <hr>	
+				<div class="product-title">SAMSUNG 980 PRO SSD 1TB</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/I/713h+shZfQL._AC_SL1500_.jpg"
+      alt="Motherboard">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/gf07djt">https://a.co/d/gf07djt</a></p>
+    </div>
+    <div class="product-price">$89.99</div>
+    <hr>
+					<div class="product-title">Thermaltake Smart 500W 80+ White Certified PSU</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/I/71Skecnsn-L._AC_SL1500_.jpg"
+      alt="Motherboard">
+    <div class="product-description">
+      <p><a class="product-link" href="https://a.co/d/9D6jp5v">https://a.co/d/9D6jp5v</a></p>
+    </div>
+    <div class="product-price">$39.95</div>
+    <hr>
+						<div class="product-title">Corsair Wired K60 RGB Pro Mechanical Gaming Keyboard</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/I/71As1MFOixL._AC_SL1500_.jpg"
+      alt="Motherboard">
+    <div class="product-description">Out to stock on amazon
+      <p><a class="product-link" href="https://www.newegg.com/corsair-k60-rgb-pro-cherry-viola-black/p/N82E16823816142?Item=N82E16823816142">newegg</a></p>
+	  <p><a class="product-link" href="https://a.co/d/2bm2U21">https://a.co/d/2bm2U21</a></p>
+    </div>
+    <div class="product-price">amazon = $74.98 newegg $84.99</div>
+    <hr>
+	
+	<div class="product-title">Logitech G703 Lightspeed Wireless Gaming Mouse</div>
+    <img class="product-image"
+      src="https://m.media-amazon.com/images/I/61-jAartdjL._AC_SL1500_.jpg"
+      alt="Motherboard">
+    <div class="product-description">Mouse broked
+	  <p><a class="product-link" href="https://a.co/d/5kna5R5">https://a.co/d/5kna5R5</a></p>
+    </div>
+    <div class="product-price">$74.09</div>
+    <hr>
+	
+	
+	
+    
+
+
+    <!-- Add more products as needed -->
+
+<!-- JavaScript to show the popup for new users and toggle dark mode -->
+<script>
+    // Function to show the popup if not shown before
+    function showPopup() {
+        const popupShown = localStorage.getItem('popupShown');
+        if (!popupShown) {
+            document.getElementById('popup').style.display = 'block';
+            localStorage.setItem('popupShown', true);
+        }
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+    // Show the popup when the page loads (for demonstration purposes)
+    window.onload = function () {
+        showPopup();
+    };
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+        const body = document.body;
+        const productContainer = document.querySelector('.product-container');
+        const darkModeToggle = document.getElementById('darkModeToggle');
+
+        if (darkModeToggle.checked) {
+            body.style.backgroundColor = '#cfcfcf'; // Light background color
+            body.style.color = '#000'; // Set text color to black
+            productContainer.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'; // Lighter product container
+        } else {
+            body.style.backgroundColor = 'url("Background.png")'; // Dark background image
+            body.style.color = '#2e2e2e'; // Set text color to white
+            productContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.8)'; // Darker product container
+        }
+    }
+</script>
+
+  </div>
+
+
+</body>
+
+</html>

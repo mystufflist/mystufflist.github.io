@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Bad Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #d9534f;
+            text-shadow: 0 0 10px rgba(217, 83, 79, 0.8);
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 0 20px rgba(217, 83, 79, 0.8);
+        }
+
+        /* Glowing effect on hover */
+        img:hover, h1:hover {
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(217, 83, 79, 0.8);
+            }
+
+            to {
+                text-shadow: 0 0 20px rgba(217, 83, 79, 0.8);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>404 Bad Request</h1>
+    <p>Oops! It seems like you enter the Wrong URL Or it Haves been Deleted.</p>
+	<p>Invalid request: <strong id="userInput"></strong></p>
+    <img src="server_crash.gif" alt="Error Illustration">
+    <p>Please check your request and try again.</p>
+
+<script>
+        // Extract the user input from the URL
+        const userInput = decodeURIComponent(location.search.substring(1));
+        document.getElementById('userInput').textContent = userInput;
+    </script>
+</body>
+
+</html>
