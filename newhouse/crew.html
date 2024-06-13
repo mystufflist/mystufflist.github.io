@@ -1,0 +1,36 @@
+<meta charset="UTF-8"> <style>
+body { margin: 0; padding: 0; background-color: #000; cursor: url('images/cursor.png'), auto;}
+#frame { width: 640px; height: 480px; overflow: hidden; position: relative; border: 1px solid #200; margin: 64px auto; animation: fadeIn 1s ease-in; }
+#front-image { width: 100%; height: 100%; animation: camShake 15s infinite; }
+@keyframes fadeIn { 0% { opacity: 0%; } 42% { opacity: 0%; } 100% { opacity: 100%; } }
+@keyframes camShake {
+   0% { transform: translate(0, 5px) rotate(0deg) scale(1.04); }
+  25% { transform: translate(2px, 5px) rotate(2deg) scale(1.04); }
+  50% { transform: translate(2px, 0) rotate(0.3deg) scale(1.04); }
+  75% { transform: translate(-5px, 2px) rotate(-1.5deg)  scale(1.04); }
+ 100% { transform: translate(0, 5px) rotate(0deg) scale(1.04); } }
+.clickable { position: absolute; cursor: pointer; cursor: url('images/cursorclick.png'), auto; }
+#particle-canvas { filter: blur(8px) opacity(16%); position: absolute; top: 0; left: 0; pointer-events: none; width: 640px; height: 480px; }
+</style> </head><body>
+  <div id="header-container"></div> 
+<div id="frame"> <img id="front-image" src="images/0.png"> <canvas id="particle-canvas" width="640" height="480"></canvas>
+  <a href="https://web.archive.org/web/20240318003234/https://smlwiki.com/cast/pablo.html"><div class="clickable" style="top: 146px; left: 50px; width: 125px; height: 130px;"></div></a>
+  <a href="https://web.archive.org/web/20240318003234/https://smlwiki.com/cast/lovell.html"><div class="clickable" style="top: 150px; left: 183px; width: 111px; height: 110px;"></div></a>
+  <a href="https://web.archive.org/web/20240318003234/https://smlwiki.com/cast/lance.html"><div class="clickable" style="top: 170px; left: 304px; width: 120px; height: 134px; transform: rotate(-6deg);"></div></a>
+  <a href="https://web.archive.org/web/20240318003234/https://smlwiki.com/cast/logan.html"><div class="clickable" style="top: 168px; left: 445px; width: 121px; height: 140px;"></div></a> </div>
+<script> const canvas = document.getElementById('particle-canvas'); const ctx = canvas.getContext('2d');
+      canvas.width = 640; canvas.height = 480;
+let particleGenerationRate = 15; const particles = [];
+  function createParticle() { if (Math.random() < particleGenerationRate / 100) { const particle = {
+     x: Math.random() * canvas.width, y: canvas.height,
+radius: Math.random() * 5 + 0.4, color: '#fff', speed: Math.random() * 3 + 1, horizontalSpeed: Math.random() * 7 - 0.1 }; particles.push(particle); } }
+  function drawParticles() { ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach((particle, index) => { ctx.fillStyle = particle.color; ctx.beginPath();
+    ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 1.5); ctx.fill();
+            particle.y -= particle.speed; particle.x += particle.horizontalSpeed; if (particle.y < 0 || particle.x < 0 || particle.x > canvas.width) { particles.splice(index, 1); } }); }
+  function animateParticles() { createParticle(); drawParticles(); requestAnimationFrame(animateParticles);
+    } animateParticles();
+  const ambbgm = new Audio('https://nez.fyi/sml-assets/ambience2.ogg'); ambbgm.play(); ambbgm.loop = true;
+  const audio2 = new Audio('https://nez.fyi/voidstuff/sounds-general/badfreq2.mp3'); audio2.play(); audio2.loop = true;
+  </script>  
+<script> fetch('global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script><!--
