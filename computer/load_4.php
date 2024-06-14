@@ -1,0 +1,21 @@
+.ua-animation{animation-duration:3s;animation-iteration-count:infinite;--ua-distance:100%}div.ua-animation,span.ua-animation{display:inline-block}.ua-animation.ua-hover-pause:hover,.ua-animation.ua-hover-play:not(:hover){animation-play-state:paused}.ua-animation.ua-hover-only:not(:hover){animation:none !important}@keyframes ua-up{to{transform:translateY(-100%);transform:translateY(calc(var(--ua-distance,100%) * -1))}}.ua-animation.ua-up{animation-name:ua-up;animation-direction:alternate}@keyframes ua-down{to{transform:translateY(100%);transform:translateY(var(--ua-distance,100%))}}.ua-animation.ua-down{animation-name:ua-down;animation-direction:alternate}@keyframes ua-right{to{transform:translateX(100);transform:translateX(var(--ua-distance,100%))}}.ua-animation.ua-right{animation-name:ua-right;animation-direction:alternate}@keyframes ua-left{to{transform:translateX(-100%);transform:translateX(calc(var(--ua-distance,100%) * -1))}}.ua-animation.ua-left{animation-name:ua-left;animation-direction:alternate}@keyframes ua-updown{25%{transform:translateY(-50%);transform:translateY(calc(var(--ua-distance,100%) * -0.5))}75%{transform:translateY(50%);transform:translateY(calc(var(--ua-distance,100%) * 0.5))}}.ua-animation.ua-updown{animation-name:ua-updown;animation-timing-function:linear}.ua-animation.ua-downup{animation-name:ua-updown;animation-timing-function:linear;animation-direction:reverse}@keyframes ua-rightleft{25%{transform:translateX(50%);transform:translateX(calc(var(--ua-distance,100%) * 0.5))}75%{transform:translateX(-50%);transform:translateX(calc(var(--ua-distance,100%) * -0.5))}}.ua-animation.ua-rightleft{animation-name:ua-rightleft;animation-timing-function:linear}.ua-animation.ua-leftright{animation-name:ua-rightleft;animation-timing-function:linear;animation-direction:reverse}@keyframes ua-swing{25%{transform:rotate(25deg)}75%{transform:rotate(-25deg)}}.ua-animation.ua-swing{animation-name:ua-swing;animation-timing-function:linear}@keyframes ua-spin{to{transform:rotate(360deg)}}.ua-animation.ua-spin,.ua-animation.ua-spin-clockwise{animation-name:ua-spin;animation-timing-function:linear}.ua-animation.ua-spin-counterclockwise{animation-name:ua-spin;animation-timing-function:linear;animation-direction:reverse}@keyframes ua-grow{to{transform:scale(2);transform:scale(var(--ua-scale-factor,2))}}.ua-animation.ua-grow{--ua-scale-factor:2;animation-name:ua-grow;animation-timing-function:ease-in-out;animation-direction:alternate}@keyframes ua-shrink{to{transform:scale(0.1);transform:scale(var(--ua-scale-factor,0.1))}}.ua-animation.ua-shrink{--ua-scale-factor:0.1;animation-name:ua-shrink;animation-timing-function:ease-in-out;animation-direction:alternate}@keyframes ua-growshrink{25%{transform:scale(1.5);transform:scale(calc(1 + var(--ua-scale-factor,0.5)))}75%{transform:scale(0.5);transform:scale(calc(1 - var(--ua-scale-factor,0.5)))}}.ua-animation.ua-growshrink{--ua-scale-factor:0.5;animation-name:ua-growshrink;animation-timing-function:linear}.ua-animation.ua-shrinkgrow{--ua-scale-factor:0.5;animation-name:ua-growshrink;animation-timing-function:linear;animation-direction:reverse}@keyframes ua-to{from{transform:none;top:0;left:0}}.ua-animation.ua-to,.ua-animation.ua-from,.ua-animation.ua-fromto,.ua-animation.ua-toandback{animation-name:ua-to;animation-fill-mode:both;position:relative}.ua-animation.ua-from{animation-direction:reverse}.ua-animation.ua-fromto{animation-direction:alternate-reverse}.ua-animation.ua-toandback{animation-direction:alternate}
+/*
+     FILE ARCHIVED ON 15:15:38 Mar 21, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:24:30 Jun 14, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.176
+  exclusion.robots: 0.155
+  exclusion.robots.policy: 0.141
+  esindex: 0.014
+  cdx.remote: 5.65
+  LoadShardBlock: 117.753 (3)
+  PetaboxLoader3.datanode: 77.791 (5)
+  PetaboxLoader3.resolve: 140.888 (3)
+  load_resource: 209.045 (2)
+*/
