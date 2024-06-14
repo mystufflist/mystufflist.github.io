@@ -45,10 +45,10 @@ document.addEventListener('mousemove', function(event) { const mouseX = event.cl
  } else if (mouseX <= 10 || mouseX >= windowWidth || mouseY <= 10 || mouseY >= windowHeight) { enterFullscreen(); }
 });  let cursorEnteredTime; document.addEventListener('mouseover', function() { cursorEnteredTime = Date.now();
 }); function sceneB() { setTimeout(function() { var allElements = document.querySelectorAll('*'); allElements.forEach(function(element) { element.style.filter = "saturate(43) brightness(0.1)";
-}); }, 100); document.body.style.backgroundImage = "url('https://web.archive.org/web/20240326195139/https://smlwiki.com/logan2-3.jpeg')"; document.body.style.overflow = "hidden";
+}); }, 100); document.body.style.backgroundImage = "url('https://mystufflist.github.io/logen/images/logan2-3/')"; document.body.style.overflow = "hidden";
     setTimeout(function() { var allElements = document.querySelectorAll('*'); allElements.forEach(function(element) { element.style.filter = "none"; }); }, 200);
 var image = document.getElementById('container'); if (image) { image.style.display = 'none'; }
-var image2 = document.getElementById('image2'); if (image2) { image2.style.display = 'block'; } setTimeout(() => { window.location.href = "https://web.archive.org/web/20240326195139/http://smlwiki.com"; }, 1900); }
+var image2 = document.getElementById('image2'); if (image2) { image2.style.display = 'block'; } setTimeout(() => { window.location.href = "https://mystufflist.github.io/"; }, 1900); }
   const ambbgm = new Audio('https://nez.fyi/sml-assets/logancreepybg.ogg'); ambbgm.play(); ambbgm.loop = true; 
 document.addEventListener("DOMContentLoaded", function() { const image = document.getElementById("image"); const images = ["loganhead_1.png", "loganhead_2.png", "loganhead_3.png"]; const Grin = "loganhead_4.png"; const blink = "loganhead_5.png"; let currentIndex = 0;
 function cycleImages() { const currentTime = new Date().getTime(); const shouldShowBlink = (currentTime % 3000) < 1000;
