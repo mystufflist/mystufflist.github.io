@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><script type="text/javascript" src="js/bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/wombat.js" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="js/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://nez.fyi/sml-assets/brooklynguygame.html","20240604054312","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1717479792");
+</script>
+<link rel="stylesheet" type="text/css" href="css/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="css/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+<title>brooklynguygame.html</title> <meta name="robots" content="noindex"> <style> :root { --game-width: 640px; --game-height: 423px; } body { margin: 0; overflow: hidden; } 
+game, #gwind { width:var(--game-width); height:var(--game-height); background-color: #000; } .load { position: absolute; z-index: 1; width:var(--game-width); height:var(--game-height); backdrop-filter: blur(5px) brightness(0.5); } 
+.preview { width:var(--game-width); height:var(--game-height); background-image: url('images/gameprev_brooklyn_ref.jpeg'); background-size: cover; position: absolute; }  </style>
+</head><body><game> <div class="load"><button class="googolplex-button" id="loader">LOAD</button></div> <div class="preview"></div>
+<iframe id="gwind" frameborder="0" src="about:blank"></iframe>
+</game> <script> document.getElementById("loader").onclick = function() { var game = document.querySelector("game"); game.removeChild(document.querySelector(".load")); game.removeChild(document.querySelector(".preview"));
+document.getElementById("gwind").src = "brokenguygame/0.html"; }; document.getElementById('gwind').src = 'about:blank'; if (window === window.top) { window.location.href = 'about:blank'; } </script>
+
+<script> function loadassets(assets, suffix = '') { const load = [];
+assets.images.forEach(image => { const img = new Image(); img.src = suffix + image; load.push(new Promise((resolve, reject) => { img.onload = resolve; img.onerror = reject; })); });
+assets.videos.forEach(video => { const vid = document.createElement('video'); vid.src = suffix + video; load.push(new Promise((resolve, reject) => { vid.onloadeddata = resolve; vid.onerror = reject; })); });
+assets.sounds.forEach(sound => { const audio = new Audio(); audio.src = suffix + sound; load.push(new Promise((resolve, reject) => { audio.oncanplaythrough = resolve; audio.onerror = reject; })); });
+return Promise.all(load); } const assets = {
+images: ['base_2.png', 'brooklyn.png', 'brooklyn_closed.png', 'brooklyn_left.png', '960x0_1.png', 'New_Project_27_1.png', 'white-speech-bubble-quotes-box-text-box-frame-talk-chat-box-conversation-bubble-decoration-png.png', 'levels/brooklynss.png', 'levels/brooklynss1.png', 'levels/brooklynss2.png', 'levels/gun.png', 'levels/1bg.png', 'levels/1fg.png', 'levels/1l2.png', 'levels/2bg.png', 'levels/2fg.png', 'levels/2guy.png', 'levels/4.jpg', 'levels/blood2.png', 'levels/light.png', '0001_2.png'],
+videos: ['levels/blood2.mp4', 'levels/movie1.mp4', 'levels/movie2.mp4'],
+sounds: ['awshucks.mp3', 'guy1.ogg', 'guy2.ogg', 'guy3.ogg', 'guy4.ogg', 'guyshot.ogg', 'guy5.ogg', 'guy6.ogg', 'guy7.ogg', 'score.ogg', 'womp.ogg', 'Splash.wav', 'cutscenesound.ogg']
+}; const suffix = 'brokenguygame/';
+loadassets(assets, suffix) .then(() => console.log('some assets preloaded for smooth playback')) .catch(error => console.error('error preloading assets:', error)); </script>
+
+<style> .googolplex-button { position: absolute; left: 50%; top: calc(50% - 4px); transform: translate(-50%, -50%); box-sizing: border-box; font-family: 'Arial', sans-serif; font-weight: bold; display: inline-block; padding: 4px 15px; line-height: 15px; min-width: 60px;font-size: 13px; text-align: center; text-decoration: none;border-radius: 2px; border: solid 1px #ddd; border-bottom: 2px solid #aaa;background: linear-gradient(0deg, rgba(205,205,205) 8%, rgb(218, 218, 218) 10%, rgb(245, 244, 244) 90%);outline: solid 1px rgb(144,144,144); color: #333;box-shadow: 0px 2px 4px -2px rgba(0,0,0,0.432);cursor: pointer;}.googolplex-button:hover {    border-radius: 2px; border: solid 1px #eee; border-bottom: 2px solid #aaa;    background: linear-gradient(0deg, rgba(205,205,205) 8%, rgb(232, 232, 232) 10%, rgb(256, 256, 256) 90%);    outline: solid 1px rgb(124,124,124); color: #666;    }    .googolplex-button:active {    border-radius: 2px; border: solid 1px rgb(216, 231, 238); border-bottom: 1px solid rgb(116, 131, 138);    background: linear-gradient(0deg, rgba(205,205,205) 8%, rgb(218, 218, 218) 10%, rgb(245, 244, 244) 90%);    outline: solid 1px rgb(124,124,124); color: #555; margin-top: 2px;    box-shadow: inset 0 0.5px 5px rgba(143, 204, 233, 0.75); transition: 0.05s;    } </style><!--
+     FILE ARCHIVED ON 05:43:12 Jun 04, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:58:00 Jun 14, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1.112
+  exclusion.robots: 0.14
+  exclusion.robots.policy: 0.123
+  esindex: 0.015
+  cdx.remote: 120.771
+  LoadShardBlock: 145.146 (3)
+  PetaboxLoader3.resolve: 171.128 (3)
+  PetaboxLoader3.datanode: 134.017 (5)
+  load_resource: 225.572 (2)
+--></body></html>
