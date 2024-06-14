@@ -16,8 +16,8 @@
 #loading-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; display: flex; align-items: center; justify-content: center; flex-direction: column; color: #fff; font-size: 17px; font-family: Arial, Helvetica, sans-serif; }
 #loading-bar-container { width: 50%; background-color: #111; overflow: hidden; margin-top: 45px; } #loading-bar { width: 0; height: 3px; background-color: #eee; transition: width 0.1s linear; }
 </style> </head><body> <div id="loading-screen"> <div>preloading large assets...</div> <div id="loading-bar-container"> <div id="loading-bar"></div> </div> </div>
-<script> const assetUrls = [ 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/scream11.png', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/arrow_down.png', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/B1-deskpaper.png', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/B1-clock.png', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/B5-head.png', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/B5-over.png', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A3-chand.png', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A4-lightflash.png', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/D2.gif', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/secret1.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/secret2.jpeg',
-'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A2.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A3.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A4.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A5.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/B1.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/C1.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/C2.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/C3.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/D1.jpeg',
+<script> const assetUrls = [ 'https://nez.fyi/sml-assets/game_root/assets/rooms/scream11.png', 'https://nez.fyi/sml-assets/game_root/assets/rooms/arrow_down.png', 'https://nez.fyi/sml-assets/game_root/assets/rooms/B1-deskpaper.png', 'https://nez.fyi/sml-assets/game_root/assets/rooms/B1-clock.png', 'https://nez.fyi/sml-assets/game_root/assets/rooms/B5-head.png', 'https://nez.fyi/sml-assets/game_root/assets/rooms/B5-over.png', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A3-chand.png', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A4-lightflash.png', 'https://nez.fyi/sml-assets/game_root/assets/rooms/D2.gif', 'https://nez.fyi/sml-assets/game_root/assets/rooms/secret1.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/secret2.jpeg',
+'https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A2.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A3.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A4.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A5.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/B1.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/C1.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/C2.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/C3.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', 'https://nez.fyi/sml-assets/game_root/assets/rooms/D1.jpeg',
 ];
 const loadingScreen = document.getElementById('loading-screen'); const loadingBar = document.getElementById('loading-bar');
 function preloadAssets(urls) { const promises = urls.map((url, index) => { return new Promise((resolve, reject) => { const asset = new Image(); asset.onload = () => {
@@ -33,14 +33,14 @@ function startGame() {
   const ctx = canvas.getContext('2d'); let currentScene = 'A1';
     let fadeOut = false; let fadeIn = false; let fadeValue = 0;
     let overlayImage;
-  const light = new Audio('https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/lighthum.ogg');
-  const guestSound = new Audio('https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/guest.ogg');
-  const atnight = new Audio('https://web.archive.org/web/20240318003326/https://nez.fyi/voidstuff/sounds-general/atnight.mp3');
-  const mainAmbience = new Audio('https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/bgloop01.ogg');
-  const heartbeat = new Audio('https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/helmet.ogg');
-  const breathsDeep = new Audio('https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/deepbreaths.ogg');
-  const failNoise = new Audio('https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/loudjscare.ogg');
-  const endSong = new Audio('https://web.archive.org/web/20240318003326/https://nez.fyi/g-assets/cvbcvbcvb.ogg');
+  const light = new Audio('https://nez.fyi/sml-assets/game_root/assets/lighthum.ogg');
+  const guestSound = new Audio('https://nez.fyi/sml-assets/game_root/assets/guest.ogg');
+  const atnight = new Audio('https://nez.fyi/voidstuff/sounds-general/atnight.mp3');
+  const mainAmbience = new Audio('https://nez.fyi/sml-assets/game_root/assets/bgloop01.ogg');
+  const heartbeat = new Audio('https://nez.fyi/sml-assets/game_root/assets/helmet.ogg');
+  const breathsDeep = new Audio('https://nez.fyi/sml-assets/game_root/assets/deepbreaths.ogg');
+  const failNoise = new Audio('https://nez.fyi/sml-assets/game_root/assets/loudjscare.ogg');
+  const endSong = new Audio('https://nez.fyi/g-assets/cvbcvbcvb.ogg');
     let flashCounter = 0;
   const flashInterval = 5000;
     let mouseX = 0; let mouseY = 0;
@@ -55,40 +55,40 @@ function showEndingB() {
   const walkBackwardSound = document.getElementById('walkBackwardSound');
   const titleAnimationDuration = 500; let titleOpacity = 0; let titleLetterSpacing = -13;
   const scenes = {
-      'A1': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', clickableAreas: [{ x: 256, y: 240, width: 80, height: 200, destination: 'A2', color: 'red', title: 'Front Entrance' }] },
-      'A2': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A2.jpeg', clickableAreas: [{ x: 560, y: 80, width: 240, height: 490, destination: 'A3', color: 'red', title: 'Dining Room' }] },
-      'D1': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/D1.jpeg', clickableAreas: [{ x: 540, y: 320, width: 62, height: 110, destination: 'D1SOUND', color: 'green', title: 'Front door handle' }] },
-      'A3': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A3.jpeg', clickableAreas: [
+      'A1': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/A1.jpeg', clickableAreas: [{ x: 256, y: 240, width: 80, height: 200, destination: 'A2', color: 'red', title: 'Front Entrance' }] },
+      'A2': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/A2.jpeg', clickableAreas: [{ x: 560, y: 80, width: 240, height: 490, destination: 'A3', color: 'red', title: 'Dining Room' }] },
+      'D1': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/D1.jpeg', clickableAreas: [{ x: 540, y: 320, width: 62, height: 110, destination: 'D1SOUND', color: 'green', title: 'Front door handle' }] },
+      'A3': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/A3.jpeg', clickableAreas: [
         { x: 20, y: 180, width: 150, height: 256, destination: 'A4', color: 'red', title: 'Kitchen (View A)' },
         { x: 500, y: 100, width: 298, height: 350, destination: 'C1', color: 'yellow', title: 'Main Hall' }
       ] },
-      'C1': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/C1.jpeg', clickableAreas: [
+      'C1': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/C1.jpeg', clickableAreas: [
         { x: 256, y: 60, width: 286, height: 473, destination: 'C2', color: 'yellow', title: 'Bedroom (B)' },
         { x: 710, y: 70, width: 89, height: 533, destination: 'C3', color: 'yellow', title: 'Bedroom (A)' }
       ] },
-      'C2': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/C2.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
-      'C3': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/C3.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
-      'A4': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A4.jpeg', clickableAreas: [
+      'C2': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/C2.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
+      'C3': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/C3.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
+      'A4': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/A4.jpeg', clickableAreas: [
         { x: 10, y: 200, width: 259, height: 250, destination: 'A5', color: 'red', title: 'Kitchen (View B)' },
         { x: 514, y: 317, width: 110, height: 34, destination: 'B1', color: 'blue', title: 'Piece of paper' }
       ] },
-      'A5': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A5.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
-      'B1': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/B1.jpeg', clickableAreas: [{ x: 214, y: 429, width: 366, height: 169, destination: 'B1ACTIN', color: 'violet', title: 'Piece of paper (Pick-up)' }] },
+      'A5': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/A5.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
+      'B1': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/B1.jpeg', clickableAreas: [{ x: 214, y: 429, width: 366, height: 169, destination: 'B1ACTIN', color: 'violet', title: 'Piece of paper (Pick-up)' }] },
       //*scene change*//
-      'B3': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/B1.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
-      'B4': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A4.jpeg', clickableAreas: [
+      'B3': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/B1.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
+      'B4': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/A4.jpeg', clickableAreas: [
         { x: 10, y: 200, width: 259, height: 250, destination: 'B5', color: 'red' },
         { x: 514, y: 317, width: 110, height: 34, destination: 'B3', color: 'violet' }
       ] },
-      'B5': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A5.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
-      'B6': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A3.jpeg', clickableAreas: [
+      'B5': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/A5.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
+      'B6': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/A3.jpeg', clickableAreas: [
         { x: 20, y: 180, width: 150, height: 256, destination: 'B4', color: 'red' },
         { x: 500, y: 100, width: 298, height: 350, destination: 'FAIL0', color: 'violet' }
       ] },
-      'FAIL0': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A5.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
-      'D2': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/D2.gif', clickableAreas: [{ x: 209, y: 20, width: 389, height: 590, destination: 'D3', color: 'violet', title: '???' }] },
-      'D3': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/secret1.jpeg', clickableAreas: [{ x: 565, y: 432, width: 36, height: 9, destination: 'D4', color: 'green', title: '??? (Pick-up)' }] },
-      'D4': { image: 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/secret2.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
+      'FAIL0': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/A5.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
+      'D2': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/D2.gif', clickableAreas: [{ x: 209, y: 20, width: 389, height: 590, destination: 'D3', color: 'violet', title: '???' }] },
+      'D3': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/secret1.jpeg', clickableAreas: [{ x: 565, y: 432, width: 36, height: 9, destination: 'D4', color: 'green', title: '??? (Pick-up)' }] },
+      'D4': { image: 'https://nez.fyi/sml-assets/game_root/assets/rooms/secret2.jpeg', clickableAreas: [{ x: -10, y: -10, width: 9, height: 9, destination: 'Z1', color: 'red' }] },
   };
   const backwardMap = {
       'A2': 'D1', 'D1': 'A2',
@@ -133,7 +133,7 @@ if (currentScene === 'A4') {
         if (overlayImage && light.currentTime > 0 && !light.paused) {
         ctx.drawImage(overlayImage, -zoomedWidth / 2, -zoomedHeight / 2, zoomedWidth, zoomedHeight); }
         if (flashCounter >= flashInterval / 16) {
-          overlayImage = new Image(); overlayImage.src = 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A4-lightflash.png';
+          overlayImage = new Image(); overlayImage.src = 'https://nez.fyi/sml-assets/game_root/assets/rooms/A4-lightflash.png';
           light.play(); flashCounter = 0;
      } else { flashCounter++; }
 }
@@ -142,16 +142,16 @@ if (currentScene === 'A3' || currentScene === 'B6') {
     const translateY = -432; 
         ctx.rotate(rotationAngle);
         ctx.translate(0, translateY);
-          overlayImage = new Image(); overlayImage.src = 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/A3-chand.png';
+          overlayImage = new Image(); overlayImage.src = 'https://nez.fyi/sml-assets/game_root/assets/rooms/A3-chand.png';
         ctx.drawImage(overlayImage, -canvas.width / 2, -canvas.height / 2, canvas.width, canvas.height);
 }
 if (currentScene === 'B1') {
-    const deskPaperImage = new Image(); deskPaperImage.src = 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/B1-deskpaper.png';
+    const deskPaperImage = new Image(); deskPaperImage.src = 'https://nez.fyi/sml-assets/game_root/assets/rooms/B1-deskpaper.png';
     const deskPaperYOffset = 93;
         ctx.drawImage(deskPaperImage, -canvas.width / 2, -canvas.height / 2 + deskPaperYOffset, canvas.width, canvas.height);
     const flashInterval = 1200; const flashCounterMax = flashInterval / 16;
       if (flashCounter >= flashCounterMax) {
-    const clockImage = new Image(); clockImage.src = 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/B1-clock.png';
+    const clockImage = new Image(); clockImage.src = 'https://nez.fyi/sml-assets/game_root/assets/rooms/B1-clock.png';
         ctx.drawImage(clockImage, -canvas.width / 2, -canvas.height / 2, canvas.width, canvas.height);
     } if (flashCounter >= flashCounterMax * 2) { flashCounter = 0; } else { flashCounter++; }
 }
@@ -162,28 +162,28 @@ if (currentScene === 'C1') {
       breathsDeep.pause(); breathsDeep.loop = false;
 }
 if (currentScene === 'D1') {
-    const handleImage = new Image(); handleImage.src = 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/D1-handle.png';
+    const handleImage = new Image(); handleImage.src = 'https://nez.fyi/sml-assets/game_root/assets/rooms/D1-handle.png';
         ctx.drawImage(handleImage, -canvas.width / 2, -canvas.height / 2, canvas.width, canvas.height);
 }
 if (currentScene === 'B3') {
     const flashInterval = 1200; const flashCounterMax = flashInterval / 16;
       if (flashCounter >= flashCounterMax) {
-    const clockImage = new Image(); clockImage.src = 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/B1-clock.png';
+    const clockImage = new Image(); clockImage.src = 'https://nez.fyi/sml-assets/game_root/assets/rooms/B1-clock.png';
         ctx.drawImage(clockImage, -canvas.width / 2, -canvas.height / 2, canvas.width, canvas.height);
     } if (flashCounter >= flashCounterMax * 2) { flashCounter = 0; } else { flashCounter++; }
 }
 if (currentScene === 'B5') { 
     const currentTime = Date.now();
-    const overlay1Image = new Image(); overlay1Image.src = 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/B5-head.png';
+    const overlay1Image = new Image(); overlay1Image.src = 'https://nez.fyi/sml-assets/game_root/assets/rooms/B5-head.png';
     const overlay1XOffset = Math.min((currentTime - lastSceneChangeTime) * 0.5, 100);
     const overlay1YOffset = 0;
         ctx.drawImage(overlay1Image, -canvas.width / 2 + overlay1XOffset, -canvas.height / 2 + overlay1YOffset, canvas.width, canvas.height);
     const overlay2Image = new Image();
-          overlay2Image.src = 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/B5-over.png';
+          overlay2Image.src = 'https://nez.fyi/sml-assets/game_root/assets/rooms/B5-over.png';
         ctx.drawImage(overlay2Image, -zoomedWidth / 2, -zoomedHeight / 2, zoomedWidth, zoomedHeight); 
 }
 if (currentScene === 'FAIL0') { 
-    const failImage = new Image(); failImage.src = 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/scream11.png';
+    const failImage = new Image(); failImage.src = 'https://nez.fyi/sml-assets/game_root/assets/rooms/scream11.png';
       guestSound.pause(); guestSound.loop = false; mainAmbience.pause(); mainAmbience.loop = false; heartbeat.pause(); heartbeat.loop = false; failNoise.play(); 
     const animationDuration = 2000; const maxRotationAngle = 7; const rotationSpeed = 0.9; const scaleChangeSpeed = 0.6;
     const startTime = Date.now();
@@ -213,7 +213,7 @@ if (currentScene === 'D4') {
         ctx.restore();
     if (currentScene !== 'A1') {
             const arrowImg = new Image();
-            arrowImg.src = 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/arrow_down.png';
+            arrowImg.src = 'https://nez.fyi/sml-assets/game_root/assets/rooms/arrow_down.png';
         ctx.drawImage(arrowImg, 375, 600, 50, 50); }
       scene.clickableAreas.forEach(area => {
         ctx.beginPath();
@@ -234,7 +234,7 @@ function changeScene() {
     scene.clickableAreas.forEach(area => {
        if (area.destination && isMouseInsideArea(area)) {
        if (area.destination === 'D1SOUND') {
-    const soundD5 = new Audio('https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/doorjam.ogg'); soundD5.play();
+    const soundD5 = new Audio('https://nez.fyi/sml-assets/game_root/assets/doorjam.ogg'); soundD5.play();
 } else if (area.destination === 'B1ACTIN') { handleB1ACTIN(); } else { currentScene = area.destination; fadeOut = true;
 lastSceneChangeTime = currentTime; walkForwardSound.play(); } } }); }
 //secondary animation handler///
@@ -257,14 +257,14 @@ let animated = false;
       animated = true; } } }; 
    }
 function handleB1ACTIN() { currentScene = 'B3';
-    const soundB1 = new Audio('https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/grabpaper.ogg'); soundB1.play();
-    const paperImage = new Image(); paperImage.src = 'https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/rooms/paper.png';
+    const soundB1 = new Audio('https://nez.fyi/sml-assets/game_root/assets/grabpaper.ogg'); soundB1.play();
+    const paperImage = new Image(); paperImage.src = 'https://nez.fyi/sml-assets/game_root/assets/rooms/paper.png';
       paperImage.style.width = '690px'; paperImage.style.height = '690px'; paperImage.style.marginLeft = '60px'; paperImage.style.marginTop = '-1px';
       paperImage.style.transition = 'transform 1.2s cubic-bezier(.1,1.23,1,.94)';
     document.body.appendChild(paperImage);
     const animatePaper = animateElement({ element: paperImage, translateY: -590, duration: 200, repeat: false, });
     animatePaper(); setTimeout(() => { paperImage.style.transform = 'translateY(0)'; }, 2200) ;
-    setTimeout(() => { const doorOpenSound = new Audio('https://web.archive.org/web/20240318003326/https://nez.fyi/sml-assets/game_root/assets/dooropen.ogg');
+    setTimeout(() => { const doorOpenSound = new Audio('https://nez.fyi/sml-assets/game_root/assets/dooropen.ogg');
         doorOpenSound.play(); mainAmbience.pause(); mainAmbience.loop = false; }, 2000);
     setTimeout(() => {
         guestSound.loop = true; guestSound.play(); heartbeat.play(); heartbeat.loop = true; }, 4000);
