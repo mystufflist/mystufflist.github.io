@@ -33,4 +33,4 @@ radius: Math.random() * 5 + 0.4, color: '#fff', speed: Math.random() * 3 + 1, ho
   const ambbgm = new Audio('https://nez.fyi/sml-assets/ambience2.ogg'); ambbgm.play(); ambbgm.loop = true;
   const audio2 = new Audio('https://nez.fyi/voidstuff/sounds-general/badfreq2.mp3'); audio2.play(); audio2.loop = true;
   </script>  
-<script> fetch('global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script><!--
+<script> fetch('https://mystufflist.github.io/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script><!--
