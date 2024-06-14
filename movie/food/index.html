@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en"><head><script src="js/analytics.js" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app218.us.archive.org';v.server_ms=316;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="js/bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/wombat.js" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="js/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://smlwiki.com/movie/food","20240603233027","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1717457427");
+</script>
+<link rel="stylesheet" type="text/css" href="css/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="css/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+ <link rel="icon" type="image/png" href="images/favicon.png"> <meta name="robots" content="noindex"> <title>The Food That Looks Good! - smlwiki.com</title> <meta name="description" content="'SML Movie: The Food That Looks Good!' is the 14,173rd episode of SML Movies. It is a well-regarded video according to most fans, at least for modern SML standa…"> <script>__wm.rw(0);</script></head>
+  <style> html { background-color: #000; overflow: hidden; } body { background: url('images/charred.jpeg') repeat; margin: 0; box-shadow: inset 0px 33px 93px 128px;  }
+#container { display: flex; justify-content: space-between; margin: 64px auto; max-width: 990px; }
+#descriptionBox { font-family:Arial, Helvetica, sans-serif; color: #eee; width: 256px;  background: linear-gradient(#333a, #111f); outline: solid 1px #444; padding: 10px; height: 485px; line-height: 26px; font-size: 17px; margin-top: 64px; }
+#video-container { position: relative; width: 640px; margin: 64px auto; } #video { outline: solid 1px #300; width: 640px; height: 480px; box-sizing: border-box; } #volumeSlider { width: 75px; }
+#controls { position: absolute; outline: solid 1px #100; width: 100%; background: #999; display: flex; align-items: center; height: 21px; box-sizing: border-box; }
+button { background: #333; cursor: url('images/cursorclick.png'), auto; outline: solid 1px #333; border: solid 2px #888; color: yellow; font-size: 11px; margin-right: 3px; height: 21px; border-radius: 0% 10% 57% 43% / 81% 20% 80% 0%;}
+button:active { border-radius: 0% 10% 17% 43% / 11% 20% 80% 0%; transform: translateY(1px) }
+input[type="range"] { width: 100%; margin: 0 3px; } #imageContainer { flex-direction: column; display: flex; margin-top: 20px; justify-content: center; align-items: center; } #imageContainer #youtube:hover { transform: scale(1.1) rotate(-1deg);}
+.flying-image { width: 11px; filter: saturate(0) brightness(0.5); opacity: 50%; position: absolute; }
+</style>  <div id="header-container"></div>
+    <div id="container">
+        <div id="video-container">
+          <video id="video" preload="metadata">
+            <source src="media/food.mp4" type="video/mp4">
+          </video>
+          <div id="controls">
+            <button id="playPauseBtn">go</button>
+            <input type="range" id="progressBar" min="0" max="100" step="0.1" value="0">
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+            <img src="images/ecualizador.gif" height="21px" style="padding-right: 2px;">
+            <a href="https://nez.fyi/sml-assets/food.mp4" target="_blank"><img src="images/adownload.gif" width="22px" id="downloadLink" style="cursor: url('images/cursorclick.png'), auto;"></a>
+          </div>
+          <div id="imageContainer">
+            <img class="image" src="images/blood.gif" width="640px">
+            <a href="https://youtube.com/video/erbApikL26g" target="_blank" id="youtube"><img class="image" src="images/yt_food.png" width="80px" style="cursor: url('images/cursorclick.png'), auto;"></a>
+          </div>
+        </div>
+        <div id="descriptionBox">
+          <h2>SML Movie: The Food That Looks Good!</h2>
+          <p>The Food That Looks Good is your typical modern SML slop full of everything we've come to dread but expect. It was voted worst SML Movie of the year last year for a reason.<br><br><b>Fact about production:</b><br>This was the last video starring a living Jeffy.<br><br>You can watch this shitfest by looking to your left, where it is.</p>
+        </div>
+      </div>
+<script>
+  const breath = new Audio('https://nez.fyi/sml-assets/breatheheavylonger.ogg'); breath.play();
+  const video = document.getElementById('video');
+  const playPauseBtn = document.getElementById('playPauseBtn');
+  const volumeSlider = document.getElementById('volumeSlider');
+  const progressBar = document.getElementById('progressBar');
+  playPauseBtn.addEventListener('click', togglePlayPause);
+  volumeSlider.addEventListener('input', updateVolume);
+  progressBar.addEventListener('input', updateProgress);
+  function togglePlayPause() {
+    if (video.paused) {video.play(); playPauseBtn.textContent = 'og';
+ } else { video.pause(); playPauseBtn.textContent = 'go';} }
+  function updateVolume() { video.volume = volumeSlider.value; }
+  function updateProgress() {
+    const progressValue = progressBar.value / 100; video.currentTime = progressValue * video.duration; }
+   video.addEventListener('timeupdate', updateProgressBar);
+  function updateProgressBar() {
+    const progressPercentage = (video.currentTime / video.duration) * 100;
+   progressBar.value = progressPercentage; }
+</script>
+<script>
+    const numImages = 14; const flyingImages = [];
+    for (let i = 0; i < numImages; i++) { createFlyingImage(); }
+function createFlyingImage() {
+    const image = document.createElement('img');
+      image.src = 'insect001.gif'; image.classList.add('flying-image');
+      document.body.appendChild(image);
+    const initialX = Math.random() * window.innerWidth; const initialY = Math.random() * window.innerHeight; image.style.left = `${initialX}px`; image.style.top = `${initialY}px`;
+flyingImages.push({ element: image,
+  speedX: Math.random() * 8 - 6, speedY: Math.random() * 6 - 4, }); }
+function updateFlyingImages() { for (const flyingImage of flyingImages) {
+flyingImage.element.style.left = `${parseFloat(flyingImage.element.style.left) + flyingImage.speedX}px`;
+flyingImage.element.style.top = `${parseFloat(flyingImage.element.style.top) + flyingImage.speedY}px`;
+if ( parseFloat(flyingImage.element.style.left) < 0 || parseFloat(flyingImage.element.style.left) + flyingImage.element.width > window.innerWidth
+ ) { flyingImage.speedX *= -1; } if ( parseFloat(flyingImage.element.style.top) < 0 || parseFloat(flyingImage.element.style.top) + flyingImage.element.height > window.innerHeight
+ ) { flyingImage.speedY *= -1; } } requestAnimationFrame(updateFlyingImages); } updateFlyingImages(); </script><img src="insect001.gif" class="flying-image" style="left: 265.476px; top: -1.39835px;"><img src="insect001.gif" class="flying-image" style="left: 701.927px; top: 75.6804px;"><img src="insect001.gif" class="flying-image" style="left: 916.425px; top: 114.428px;"><img src="insect001.gif" class="flying-image" style="left: 227.501px; top: 433.456px;"><img src="insect001.gif" class="flying-image" style="left: 518.029px; top: 887.827px;"><img src="insect001.gif" class="flying-image" style="left: 403.503px; top: 457.11px;"><img src="insect001.gif" class="flying-image" style="left: 291.535px; top: 365.443px;"><img src="insect001.gif" class="flying-image" style="left: 348.454px; top: 106.243px;"><img src="insect001.gif" class="flying-image" style="left: 1031.53px; top: 336.802px;"><img src="insect001.gif" class="flying-image" style="left: 859.892px; top: 149.558px;"><img src="insect001.gif" class="flying-image" style="left: 943.062px; top: 704.786px;"><img src="insect001.gif" class="flying-image" style="left: 1078.97px; top: 253.591px;"><img src="insect001.gif" class="flying-image" style="left: 1070px; top: 312.456px;"><img src="insect001.gif" class="flying-image" style="left: 1389px; top: 784.28px;">
+
+
+
+<script> fetch('https://mystufflist.github.io/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script></body></html>
