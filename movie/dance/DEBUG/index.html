@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"><head><script src="js/FbhIEFIFvI8A.js" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app225.us.archive.org';v.server_ms=323;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="js/xSiXIE7HXWbj.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/hU6mFwMoyVBB.js" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="js/2ieUU9PY4sCZ.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://smlwiki.com/movie/dance","20240603233436","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1717457676");
+</script>
+<link rel="stylesheet" type="text/css" href="css/tOTuYiJ7F6JK.css">
+<link rel="stylesheet" type="text/css" href="css/4zqg692ZJqFy.css">
+<!-- End Wayback Rewrite JS Include -->
+<script src="js/mtmSylhYACEi.js"></script>
+<style> canvas { filter: brightness(0.5) contrast(3); animation: fadein 4.23s forwards; animation-delay: 1200ms; } 
+@keyframes fadein { from {filter: brightness(0.5) contrast(3);} to {filter: brightness(1) contrast(1);} }
+</style> <script type="module"> import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js';
+  const scene = new THREE.Scene(); const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000); const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight); document.body.appendChild(renderer.domElement);
+    const floorTexture = new THREE.TextureLoader().load('grass3.jpg'); floorTexture.wrapS = THREE.RepeatWrapping; floorTexture.wrapT = THREE.RepeatWrapping; floorTexture.repeat.set(3, 3);
+  const floorGeometry = new THREE.PlaneGeometry(12, 19);
+  const floorMaterial = new THREE.MeshBasicMaterial({ map: floorTexture, side: THREE.DoubleSide });
+  const floor = new THREE.Mesh(floorGeometry, floorMaterial);
+      scene.add(floor); floor.rotation.x = -Math.PI / 2;
+    const houseTexture = new THREE.TextureLoader().load('smlhouse.png');
+  const houseGeometry = new THREE.BoxGeometry(3.7, 2, 2);
+  const houseMaterial = new THREE.MeshBasicMaterial({ map: houseTexture });
+  const house = new THREE.Mesh(houseGeometry, houseMaterial);
+      scene.add(house);
+  const doorTexture = new THREE.TextureLoader().load('door.png');
+  const doorGeometry = new THREE.BoxGeometry(0.27, 0.6, 0.05);
+  const doorMaterial = new THREE.MeshBasicMaterial({ map: doorTexture });
+  const door = new THREE.Mesh(doorGeometry, doorMaterial);
+      scene.add(door);
+  const skyboxGeometry = new THREE.BoxGeometry(100, 100, 100);
+  const skyboxMaterial = new THREE.MeshBasicMaterial({ color: 0x000043, side: THREE.BackSide });
+  const skybox = new THREE.Mesh(skyboxGeometry, skyboxMaterial);
+      scene.add(skybox);
+    house.position.set(0, 1, 0);
+    door.position.set(-0.68, 0.39, 1);
+    skybox.position.set(0, 0, 0);
+ camera.position.set(0, 0.56, 14);
+  const tl = gsap.timeline(); const zoom = new Audio('https://nez.fyi/sml-assets/dance-zoom.ogg'); zoom.oncanplaythrough = function () { startAnimation(); };
+function startAnimation() {
+    tl.to(camera.position, { duration: 5, z: 3, ease: 'power1.in' })
+      .to(door.rotation, { duration: 3, y: Math.PI * -0.4, ease: 'power1.inOut' }, '=0.6')
+      .to(door.position, { duration: 3, x: -0.71, z: 1.27, ease: 'power1.inOut' }, '-=3.3')
+      .to(skyboxMaterial.color, { duration: 0, r: 15 / 255, g: 159 / 255, b: 250 / 255 }, '-=3.6');
+    const animate = () => { requestAnimationFrame(animate); renderer.render(scene, camera); };
+animate(); zoom.play(); } setTimeout( function(){ window.location = "https://youtube.com/video/UUhBeXLIHG8?t=8&=autoplay=1" }, 99999);
+ // const cameraSpeed = 0.046; document.addEventListener('mousemove', onMouseMove);
+function onMouseMove(event) { const mouseX = -(event.clientX / window.innerWidth) * 30 + 15; const mouseY = -(event.clientY / window.innerHeight) * 20 + 10;
+  camera.rotation.y = mouseX * cameraSpeed; camera.rotation.x = mouseY * cameraSpeed; }
+</script> </head><body style="margin: 0; overflow: hidden;">
+  <div id="header-container"></div>  
+
+<script> fetch('https://mystufflist.github.io/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script></body></html>
