@@ -1,0 +1,9 @@
+<link rel="icon" type="image/png" href="images/favicon.png"> <meta name="robots" content="noindex"> <title>…</title> <script>__wm.rw(0);</script></head> 
+  <style>
+body { margin: 0; padding: 0; overflow: hidden; background-color: #000; cursor: url('images/cursor.png'), auto;} html { cursor: url('images/cursor.png'), auto;}
+#middleimage { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+#clickarea { position: absolute; top: 50%; left: calc(50% - 49px); transform: translate(-50%, -50%); width: 56px; height: 30px; cursor: url('images/cursorclick.png'), auto;  }
+</style>  <div id="header-container"></div> <div id="middleimage"><img src="images/loganid.jpeg" width="200"></div><a href="https://mystufflist.github.io/logan"><span id="clickarea"></span></a>
+<script> const ambbgm = new Audio('https://nez.fyi/sml-assets/men.ogg'); ambbgm.play(); ambbgm.loop = true;
+</script>  
+<script> fetch('https://mystufflist.github.io/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script></body></html>
