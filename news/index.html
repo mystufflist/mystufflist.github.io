@@ -47,4 +47,4 @@ index = (index + 1) % images.length; }, 80); }
 function handleMouseOut() { clearInterval(intervalId); goodamImage.src = 'goodam01.png'; window.speechSynthesis.cancel(); resetHeaderTitle(); }
 newsBreaks.forEach(newsBreak => { newsBreak.addEventListener('mouseover', handleMouseOver); newsBreak.addEventListener('mouseout', handleMouseOut); }); </script>
 
-<script> fetch('mystufflist.github.io/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script><</body></html>
+<script> fetch('https://mystufflist.github.io/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script><</body></html>
