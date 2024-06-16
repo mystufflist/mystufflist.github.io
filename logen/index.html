@@ -27,7 +27,7 @@
 window.addEventListener("mousemove", (e) => { eyes.forEach((eye) => { var rect = eye.getBoundingClientRect();
 var x = (e.pageX - rect.left) / 40 + "px"; var y = (e.pageY - rect.top) / 50 + "px";
 eye.style.transform = "translate3d(" + x + "," + y + ", 0px)"; });
-});     var audio = new Audio('https://nez.fyi/sml-assets/logandeathscreen.ogg');
+});     var audio = new Audio('logandeathscreen.ogg');
 document.addEventListener("DOMContentLoaded", function () { var elements = ['#eyes', '#image'];
 elements.forEach(function (elementId) { var element = document.querySelector(elementId); var animationDuration = 6;
   var keyframesX = ['0% { margin-left: 0; }', '25% { margin-left: 5px; }', '50% { margin-left: -10px; }', '100% { margin-left: 0; }'];
@@ -49,7 +49,7 @@ document.addEventListener('mousemove', function(event) { const mouseX = event.cl
     setTimeout(function() { var allElements = document.querySelectorAll('*'); allElements.forEach(function(element) { element.style.filter = "none"; }); }, 200);
 var image = document.getElementById('container'); if (image) { image.style.display = 'none'; }
 var image2 = document.getElementById('image2'); if (image2) { image2.style.display = 'block'; } setTimeout(() => { window.location.href = "https://mystufflist.github.io/"; }, 1900); }
-  const ambbgm = new Audio('https://nez.fyi/sml-assets/logancreepybg.ogg'); ambbgm.play(); ambbgm.loop = true; 
+  const ambbgm = new Audio('logancreepybg.ogg'); ambbgm.play(); ambbgm.loop = true; 
 document.addEventListener("DOMContentLoaded", function() { const image = document.getElementById("image"); const images = ["loganhead_1.png", "loganhead_2.png", "loganhead_3.png"]; const Grin = "loganhead_4.png"; const blink = "loganhead_5.png"; let currentIndex = 0;
 function cycleImages() { const currentTime = new Date().getTime(); const shouldShowBlink = (currentTime % 3000) < 1000;
   if (shouldShowBlink) { image.src = blink;
