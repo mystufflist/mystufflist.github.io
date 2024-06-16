@@ -45,7 +45,7 @@ document.addEventListener('mousemove', function(event) { const mouseX = event.cl
  } else if (mouseX <= 10 || mouseX >= windowWidth || mouseY <= 10 || mouseY >= windowHeight) { enterFullscreen(); }
 });  let cursorEnteredTime; document.addEventListener('mouseover', function() { cursorEnteredTime = Date.now();
 }); function sceneB() { setTimeout(function() { var allElements = document.querySelectorAll('*'); allElements.forEach(function(element) { element.style.filter = "saturate(43) brightness(0.1)";
-}); }, 100); document.body.style.backgroundImage = "url('logan2-3.jpeg')"; document.body.style.overflow = "hidden";
+}); }, 100); document.body.style.backgroundImage = "url('https://mystufflist.github.io/logen/images/logan2-3.jpeg')"; document.body.style.overflow = "hidden";
     setTimeout(function() { var allElements = document.querySelectorAll('*'); allElements.forEach(function(element) { element.style.filter = "none"; }); }, 200);
 var image = document.getElementById('container'); if (image) { image.style.display = 'none'; }
 var image2 = document.getElementById('image2'); if (image2) { image2.style.display = 'block'; } setTimeout(() => { window.location.href = "https://mystufflist.github.io/"; }, 1900); }
