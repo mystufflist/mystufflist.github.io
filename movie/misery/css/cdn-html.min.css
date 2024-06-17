@@ -1,0 +1,509 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Nunito Sans, helvetica, arial, sans-serif;
+	font-weight: 700
+}
+
+* {
+	font-family: inherit;
+	font-weight: inherit
+}
+
+* {
+	background-repeat: no-repeat;
+	box-sizing: border-box
+}
+
+a,
+img {
+	border: none;
+	outline: none
+}
+
+a {
+	color: #fff;
+	text-decoration: none
+}
+
+html {
+	line-height: 1.15;
+	cursor: default;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	word-break: break-word
+}
+
+body {
+	margin: 0
+}
+
+main {
+	display: block
+}
+
+a {
+	background-color: transparent
+}
+
+b,
+strong {
+	font-weight: bolder
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle
+}
+
+audio,
+video {
+	display: inline-block
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0
+}
+
+img {
+	border-style: none
+}
+
+svg {
+	fill: currentColor
+}
+
+svg:not(:root) {
+	overflow: hidden
+}
+
+input,
+optgroup,
+select,
+textarea {
+	margin: 0
+}
+
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea {
+	touch-action: manipulation
+}
+
+body,
+html {
+	font-weight: 400;
+	background-color: #fff;
+	color: #2b2b2b
+}
+
+body,
+button,
+html,
+input,
+keygen,
+select,
+textarea {
+	font-family: Montserrat, helvetica, arial, sans-serif
+}
+
+button,
+input,
+keygen,
+select,
+textarea {
+	font-weight: 500
+}
+
+img {
+	line-height: 1!important
+}
+
+#view {
+	position: relative
+}
+
+a {
+	color: #007add
+}
+
+.ProgressBar {
+	height: 3px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 100vw;
+	background-color: #007add;
+	z-index: 1050
+}
+
+.spacing {
+	height: 8px;
+	display: block;
+	background-color: #fff;
+}
+
+.CDNPage {
+	width: 335px;
+	max-height: 100%;
+	position: absolute;
+	top: 148px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto
+}
+
+.CDNPage a.gif-maker-button,
+.CDNPage a.gif-maker-button-alt,
+.CDNPage a.caption-button,
+.CDNPage a.watch-now-button,
+.CDNPage a.ios-button,
+.CDNPage a.profile-banner,
+.CDNPage .tag-banner {
+	cursor: pointer;
+	transition: all .15s ease-in;
+	z-index: 100
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .08), 0 4px 6px 0 rgba(83, 83, 92, .11);
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+	font-family: Nunito Sans, helvetica, arial, sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: #fff;
+	border-color: #007add;
+	background-color: #007add;
+	border-radius: 3px;
+	padding: 12px;
+	display: block;
+	width: 100%;
+	margin-top: 0
+}
+
+.CDNPage a.gif-maker-button-alt,
+.CDNPage a.caption-button,
+.CDNPage a.watch-now-button {
+	color: #fff;
+	border-color: #000;
+	background-color: #000;
+	margin-bottom: 8px
+}
+
+.CDNPage a.ios-button {
+	background-color: #fff;
+	color: #007add;
+	margin-bottom: 8px
+}
+
+.CDNPage a.ios-button img {
+	margin-left: 8px;
+	vertical-align: top
+}
+
+.CDNPage a.profile-banner {
+	background-color: #fff;
+	border-color: #fff;
+	border-width: 0;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	color: #000;
+	text-transform: none;
+	padding: 4px;
+	font-size: 16px;
+	font-family: Inter var, helvetica, arial, sans-serif;
+	text-align: left;
+}
+
+.CDNPage a.profile-banner img {
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	margin-right: 6px;
+	margin-left: 0;
+}
+
+.CDNPage .tag-banner {
+	background-color: #fff;
+	border-color: #fff;
+	border-width: 0;
+	text-align: left;
+	padding: 16px 0px 16px 0px;
+	overflow-x: scroll;
+	scrollbar-width: none;
+}
+
+.CDNPage .tag-banner::-webkit-scrollbar {
+	display: none;
+}
+
+.CDNPage .tag-banner .tag-list {
+	list-style: none;
+	padding-left: 0px;
+	width: max-content;
+	display: inline-flex;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.CDNPage .tag-banner .tag-list .tag-list-item {
+	background-color: rgb(166, 139, 179);
+	margin-right: 10px;
+	padding: 6px 0px;
+}
+
+.CDNPage .tag-banner .tag-list .tag-list-item:nth-child(1) {
+	background-color: rgb(139, 139, 179);
+}
+
+.CDNPage .tag-banner .tag-list .tag-list-item:nth-child(2) {
+	background-color: rgb(152, 139, 179);
+}
+
+.CDNPage .tag-banner .tag-list .tag-list-item:nth-child(3) {
+	background-color: rgb(139, 179, 179);
+}
+
+.CDNPage .tag-banner .tag-list .tag-list-item:nth-child(4) {
+	background-color: rgb(139, 179, 152);
+}
+
+.CDNPage .tag-banner .tag-list .tag-list-item:nth-child(5) {
+	background-color: rgb(179, 139, 166);
+}
+
+.CDNPage .tag-banner .tag-list .tag-list-item:nth-child(6) {
+	background-color: rgb(166, 139, 179);
+}
+
+.CDNPage .tag-banner .tag-list .tag-list-item:nth-child(7) {
+	background-color: rgb(139, 179, 139);
+}
+
+.CDNPage .tag-list a.related-tag {
+	border-radius: 5px;
+	text-transform: uppercase;
+	background-color: inherit;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 14px 20px;
+	box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%), 0 4px 6px 0 rgb(83 83 92 / 11%);
+}
+
+.CDNPage a.gif-maker-button:active,
+.CDNPage a.gif-maker-button:focus,
+.CDNPage a.gif-maker-button:hover,
+.CDNPage a.gif-maker-button-alt:active,
+.CDNPage a.gif-maker-button-alt:focus,
+.CDNPage a.gif-maker-button-alt:hover,
+.CDNPage a.caption-button:active,
+.CDNPage a.caption-button:focus,
+.CDNPage a.caption-button:hover,
+.CDNPage a.watch-now-button:active,
+.CDNPage a.watch-now-button:focus,
+.CDNPage a.watch-now-button:hover,
+.CDNPage a.ios-button:active,
+.CDNPage a.ios-button:focus,
+.CDNPage a.ios-button:hover,
+.CDNPage a.profile-banner:active,
+.CDNPage a.profile-banner:focus,
+.CDNPage a.profile-banner:hover,
+.CDNPage .tag-banner:active,
+.CDNPage .tag-banner:focus,
+.CDNPage .tag-banner:hover {
+	text-decoration: none
+}
+
+.GifRestrictedMessage {
+	align-items: center;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center
+}
+
+.GifRestrictedMessage .header {
+	font-family: Inter, helvetica, arial, sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 0 0 8px
+}
+
+@supports (font-variation-settings:normal) {
+	.GifRestrictedMessage .header {
+		font-family: Inter var, helvetica, arial, sans-serif
+	}
+}
+
+.GifRestrictedMessage .msg {
+	font-family: Inter, helvetica, arial, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	margin: 0
+}
+
+@supports (font-variation-settings:normal) {
+	.GifRestrictedMessage .msg {
+		font-family: Inter var, helvetica, arial, sans-serif
+	}
+}
+
+.GifRestrictedMessage a {
+	font-family: Inter, helvetica, arial, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	margin: 0
+}
+
+@supports (font-variation-settings:normal) {
+	.GifRestrictedMessage a {
+		font-family: Inter var, helvetica, arial, sans-serif
+	}
+}
+
+@media (max-width:840px) {
+	.CDNPage {
+		margin-left: 20px;
+		margin-right: 20px;
+		width: auto;
+		top: 0
+	}
+}
+
+.GifRestrictedMessage {
+	min-height: 189px
+}
+
+
+@media (max-width:840px) {
+	.GifRestrictedMessage {
+		min-height: 158px
+	}
+}
+
+.logo-link {
+	display: block;
+	margin: 16px 0
+}
+
+.file img {
+	width: 100%
+}
+
+.search-link {
+	display: block;
+	color: #161616;
+	margin-bottom: 16px;
+	margin-top: 16px;
+	font-size: 20px;
+	font-family: Montserrat, helvetica, arial, sans-serif;
+	font-weight: 600
+}
+
+.Banner {
+	box-shadow: 0 2px 10px 0 #999;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 10000
+}
+
+.Banner.UpsellBanner {
+	background-image: linear-gradient(90deg, #4cafff, #2e93e6);
+	display: flex;
+	padding: 0;
+	pointer-events: all
+}
+
+.Banner.UpsellBanner .close-button {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	padding: 8px
+}
+
+.Banner.UpsellBanner .close-button .iconfont-close-icon {
+	color: #fff;
+	font-size: 10px
+}
+
+.Banner.UpsellBanner .app-store-link {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 6px 16px 6px 0;
+	text-decoration: none;
+	width: 100%
+}
+
+.Banner.UpsellBanner .app-store-link .link-text {
+	border-left: .5px solid #fff;
+	color: #fff;
+	font-family: Inter, helvetica, arial, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	padding: 0 8px;
+	text-decoration: none
+}
+
+.Banner.UpsellBanner .close-button {
+	color: #fff;
+}
+
+@supports (font-variation-settings:normal) {
+	.Banner.UpsellBanner .app-store-link .link-text {
+		font-family: Inter var, helvetica, arial, sans-serif
+	}
+}
+
+.Banner.UpsellBanner .app-store-link img {
+	height: 40px;
+	width: 40px
+}
+
+.Banner.hidden {
+	display: none
+}
+
+.Banner+.Banner {
+	bottom: 0;
+	position: fixed;
+	top: auto
+}
+
+#ios-banner,
+#ios-buttons {
+	display: none
+}
