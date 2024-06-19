@@ -36,7 +36,7 @@
 <div id="image-frame"> <div class="textbox">Apperance:</div> <div class="appearance-buttons">
     <button onclick="changeAppearance('current')" class="pressed">Current</button>
     <button onclick="changeAppearance('former')">Former</button> </div>
-<div id="image-container"> <img src="/images/marvinblood.jpeg"> </div>
+<div id="image-container"> <img src="https://mystufflist.github.io/characters/images/marvinblood.jpeg"> </div>
 <div class="infobox"><span style="opacity: 0.03;">GNDWUO,</span> I would eat him</div> </div>
   </div>
 <script> changeAppearance('current');
@@ -44,8 +44,8 @@ function changeAppearance(appearance) {
   const buttons = document.querySelectorAll('.appearance-buttons button');
         buttons.forEach(btn => btn.classList.remove('pressed'));
   const image = document.querySelector('#image-container img');
-       if (appearance === 'current') { image.src = '/images/marvinblood.jpeg';
-} else if (appearance === 'former') { image.src = '/images/previousmarvin.JPG'; }
+       if (appearance === 'current') { image.src = 'https://mystufflist.github.io/characters/images/marvinblood.jpeg';
+} else if (appearance === 'former') { image.src = 'https://mystufflist.github.io/characters/images/previousmarvin.JPG'; }
   const pressedButton = Array.from(buttons).find(button => button.innerText.toLowerCase().includes(appearance)); pressedButton.classList.add('pressed'); }
 const audio = new Audio('https://nez.fyi/sml-assets/char.ogg'); audio.loop = true; audio.play();
 </script>  
