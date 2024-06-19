@@ -44,7 +44,7 @@ function changeAppearance(appearance) {
   const buttons = document.querySelectorAll('.appearance-buttons button');
         buttons.forEach(btn => btn.classList.remove('pressed'));
   const image = document.querySelector('#image-container img');
-       if (appearance === 'current') { image.src = 'marvinblood.jpeg';
+       if (appearance === 'current') { image.src = '/images/marvinblood.jpeg';
 } else if (appearance === 'former') { image.src = 'previousmarvin.JPG'; }
   const pressedButton = Array.from(buttons).find(button => button.innerText.toLowerCase().includes(appearance)); pressedButton.classList.add('pressed'); }
 const audio = new Audio('https://nez.fyi/sml-assets/char.ogg'); audio.loop = true; audio.play();
