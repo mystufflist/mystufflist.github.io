@@ -45,10 +45,10 @@ function changeAppearance(appearance) {
         buttons.forEach(btn => btn.classList.remove('pressed'));
   const image = document.querySelector('#image-container img');
        if (appearance === 'current') { image.src = '/images/marvinblood.jpeg';
-} else if (appearance === 'former') { image.src = 'previousmarvin.JPG'; }
+} else if (appearance === 'former') { image.src = '/images/previousmarvin.JPG'; }
   const pressedButton = Array.from(buttons).find(button => button.innerText.toLowerCase().includes(appearance)); pressedButton.classList.add('pressed'); }
 const audio = new Audio('https://nez.fyi/sml-assets/char.ogg'); audio.loop = true; audio.play();
 </script>  
 
-<script> fetch('https://web.archive.org/web/20240324225052/https://smlwiki.com/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>
+<script> fetch('https://mystufflist.github.io/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>
 </body></html>
