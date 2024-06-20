@@ -36,7 +36,7 @@
     <button onclick="changeAppearance('current')" class="pressed">Current</button>
     <button onclick="changeAppearance('former')">Former</button>
     <button onclick="changeAppearance('funtime')">Funtime</button> </div>
-<div id="image-container"> <img src="currentlovell.png"> </div>
+<div id="image-container"> <img src="https://mystufflist.github.io/cast/images/currentlovell.png"> </div>
 <div class="infobox">the sands of timE and gaze of Death
   <br>some call it fate, or even destiny, bUt to me, this Is war.
   <br>every-thing has a CosT.</div> </div>
@@ -46,11 +46,11 @@ function changeAppearance(appearance) {
   const buttons = document.querySelectorAll('.appearance-buttons button');
         buttons.forEach(btn => btn.classList.remove('pressed'));
   const image = document.querySelector('#image-container img');
-       if (appearance === 'current') { image.src = 'currentlovell.png';
-} else if (appearance === 'former') { image.src = 'starch.jpeg';
-} else if (appearance === 'funtime') { image.src = 'actor-lovell-stanton-83029_large.png'; }
+       if (appearance === 'current') { image.src = 'https://mystufflist.github.io/cast/images/currentlovell.png';
+} else if (appearance === 'former') { image.src = 'https://mystufflist.github.io/cast/images/starch.jpeg';
+} else if (appearance === 'funtime') { image.src = 'https://mystufflist.github.io/cast/images/actor-lovell-stanton-83029_large.png'; }
   const pressedButton = Array.from(buttons).find(button => button.innerText.toLowerCase().includes(appearance)); pressedButton.classList.add('pressed'); }
-  const audio = new Audio('https://web.archive.org/web/20240604054203/https://nez.fyi/sml-assets/badfreq_alt.ogg'); audio.loop = true; audio.play();
+  const audio = new Audio('https://nez.fyi/sml-assets/badfreq_alt.ogg'); audio.loop = true; audio.play();
 </script>  
 <script> fetch('https://mystufflist.github.io/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>
 </body></html>
