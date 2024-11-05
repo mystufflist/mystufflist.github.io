@@ -1,3 +1,3 @@
 # mystufflist.github.io
 
-#Rip SMLWIKI.com
+# Rip SMLWIKI.com
