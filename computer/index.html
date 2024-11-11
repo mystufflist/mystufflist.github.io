@@ -1,4 +1,6 @@
-<title>Computer - smlwiki.com</title> <meta name="robots" content="noindex"> <style> body { background-color: #000; } body::after { content: ''; top: 0; left: 0; width: 100%; height: 100%; position: absolute; background-color: #000; opacity: 1; animation: fade-in 4.23s cubic-bezier(.4,.57,.35,.98) forwards; animation-delay: 256ms; user-select: none; pointer-events: none; }
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://smlwiki.com/computer -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>Computer - smlwiki.com</title> <meta name="robots" content="noindex"> <style> body { background-color: #000; overflow: hidden; } body::after { content: ''; top: 0; left: 0; width: 100%; height: 100%; position: absolute; background-color: #000; opacity: 1; animation: fade-in 4.23s cubic-bezier(.4,.57,.35,.98) forwards; animation-delay: 256ms; user-select: none; pointer-events: none; }
 @keyframes fade-in {  0% { opacity: 1; } 100% { opacity: 0; } }
 #laptop { position: absolute; display: block; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 #laptop img { pointer-events: none !important; user-select: none !important; position: absolute; top: calc(50% - 3px); left: calc(50% - 1px); transform: translate(-50%, -50%);  }
@@ -7,16 +9,16 @@ rotateX(-15deg) rotateY(1.5deg) rotateZ(0.6deg) scale(0.86) skewY(-0.2deg) skewX
 #powerdownscreen { width: 800px; height: 500px; overflow: hidden; position: absolute; top: calc(50% - 136px); left: calc(50% + 99px); transform: translate(-50%, -50%) 
 rotateX(-15deg) rotateY(1.5deg) rotateZ(0.6deg) scale(0.86) skewY(-0.2deg) skewX(0.8deg); transform-origin: 47% 51% 3px; z-index: -2; display: none; background-color: #000; }
 #screen::after, #powerdownscreen::after { pointer-events: none; content: ""; position: absolute; top: 0; left: 0; width: 482px; height: 393px;
-background-image: url('images/z6gMBMN6KFy9.jpeg'); background-size: cover; mix-blend-mode: exclusion; opacity: 0.08; transform: scale(1.27); }
+background-image: url('laptop/pcscreen.jpeg'); background-size: cover; mix-blend-mode: exclusion; opacity: 0.08; transform: scale(1.27); }
 #screen::before, #powerdownscreen::before { pointer-events: none; content: ""; position: absolute; top: 0; left: 0; width: 482px; height: 393px;
-background-image: url('images/Y4SBMi7qughm.jpeg'); background-size: cover; mix-blend-mode: darken; opacity: 0.19; transform: scale(1.27); }
+background-image: url('laptop/pcscreen2.jpeg'); background-size: cover; mix-blend-mode: darken; opacity: 0.19; transform: scale(1.27); }
 iframe { background-color: #111; }
-#desktop-bg { background-image: url(images/JEsviPrRzFDX.jpeg); background-size: cover; height: 415px; width: 548px; position: absolute; }
+#desktop-bg { background-image: url(cast/lance-sighting-fatal.jpeg); background-size: cover; height: 415px; width: 548px; position: absolute; }
 .window { border: solid 8px #ddda; border-top: solid 32px #dddd; border-radius: 4px; outline: solid #2226 2px; margin: auto; padding: 0; width: 468px; height: 320px; margin-top: 6px; z-index: -1; animation: open cubic-bezier(0,.01,.16,1) 256ms; }
 @keyframes open { 0% { transform: rotateX(14deg) rotateY(5deg) skewY(4deg) translateY(80px) scale3d(0.3, 0.3, 13); opacity: 0.3; filter: blur(4px); } 100% { transform: scale(1) rotateX(0deg) rotateY(0deg); opacity: 1; } }
 #browser { display: none; } #noter { display: none; }
 #searchbar { width: 423px; height: 20px; background-color: #eee; outline: solid 1px #fffa; border: solid 1px #666; position: absolute; top: 12px; border-radius: 2px; box-shadow: 0 1px 3px #0004; }
-.closebtn { width: 32px; height: 15px; background: linear-gradient(#f33 10%, #f53); outline: solid 1px #fffa; border: solid 1px #666; position: absolute; top: 12px; right: 39px; border-radius: 2px; box-shadow: 0 1px 3px #0004, inset #1004 0px -1px 3px, inset #faa 0px 1px 3px; text-align: center; font-family: Verdana ; color: #fff; font-size: 11px; cursor: pointer; transition: cubic-bezier(.5,.21,.16,1) 128ms; }
+.closebtn { width: 32px; height: 15px; background: linear-gradient(#f33 10%, #f53); outline: solid 1px #fffa; border: solid 1px #666; position: absolute; margin-top: -25px; right: 39px; border-radius: 2px; box-shadow: 0 1px 3px #0004, inset #1004 0px -1px 3px, inset #faa 0px 1px 3px; text-align: center; font-family: Verdana ; color: #fff; font-size: 11px; cursor: pointer; transition: cubic-bezier(.5,.21,.16,1) 128ms; }
 .closebtn:hover, .icon:hover { filter: brightness(1.2) hue-rotate(5deg); }
 #taskbar { width: 548px; height: 33px; position: absolute; background: linear-gradient(rgba(133,133,165,0.9) 5%, #56aa); border-top: solid 1px #89a; bottom: 88px; }
 .icon { width: 28px; height: 28px; top: 4px; position: absolute; cursor: pointer; }
@@ -26,8 +28,13 @@ iframe { background-color: #111; }
 #noter input { width: calc(300px - 8px); height: 29px; text-align: left; font-size: 13px; font-family: Arial; word-wrap: break-word; }
 #poweroff { display: none; background-color: #3aaa;  flex-direction: column; width: 128px; bottom: 43px; left: 3px; text-align: center; position: absolute; font-family: Arial; font-weight: bold; font-size: 14px; padding: 3px; border: solid 1px #7cc; color: #eee; text-shadow: 0 1px 1px #0006, 1px 1px 3px #0006; }
 #poweroff-buttons { flex-direction: row; margin: auto; }
-</style>
- <div id="laptop"><img src="images/ELtiXEEo7MaO.png"><img src="images/531j01wvVfld.png" style="position: absolute; display: block; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
+@media (max-width: 800px) { #laptop { scale: 0.75; } } @media (max-height: 800px) { #laptop { scale: 0.75; } }
+@media (max-height: 640px) { #laptop { transform: translateX(20px) translateY(256px) scale(1.65); } }
+.windowtitle { position: absolute; margin-top: -22px; margin-left: 3px; font-family: Arial; font-size: 12px; } @keyframes zom {0%{}100%{pointer-events:none;transform: translateY(860px) scale(6);filter:brightness(21)contrast(0.2)}} </style>
+<style id="dark-reader-style" type="text/css">@media screen {
+html {-webkit-transition : -webkit-filter 300ms linear;}
+}</style></head><body><div id="laptop"><img src="./index_files/laptop-open.png"><img src="./index_files/note-current.png" style="position: absolute; display: block; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
+
 <span id="screen"> <span id="desktop-bg">
 
 <span id="poweroff">
@@ -35,28 +42,37 @@ Are you sure you want to power off?<span id="poweroff-buttons"><button onclick="
 </span> <!--power-->
 
 <div class="window" id="browser" title="Browser"> <input id="searchbar" type="text" placeholder="Enter URL..."> <span class="closebtn" onclick="closeBrowser()">X</span>
-<iframe src="SuperMarioLogan_Wiki.html" id="iframe" width="468" height="320" frameborder="0"></iframe>
+<iframe src="./index_files/saved_resource.html" id="iframe" width="468" height="320" frameborder="0"></iframe>
 </div> <!--browser-->
 
-<div class="window" id="noter" title="Noter" style="width: 300px; height: 35px; margin-right: 29px;"> <span class="closebtn" onclick="closeNoter()">X</span>
-<input type="text">
+<div class="window" id="noter" title="Noter" style="width: fit-content; height: fit-content; margin-right: 29px;"> <span class="windowtitle">Noter</span> <span class="closebtn" onclick="closeNoter()">X</span>
+<textarea id="text" rows="16" cols="32" maxlength="1024" style="border: none; outline: none; font-family: Arial; font-size: 12px; min-width: 128px; min-height: 116px; max-width: 360px; max-height: 320px; scrollbar-width: thin;"></textarea>
+<script> const textarea = document.getElementById('text'); let timeout; textarea.addEventListener('input', () => { clearTimeout(timeout); timeout = setTimeout(() => { localStorage.setItem('savedText', textarea.value); }, 256); }); window.addEventListener('DOMContentLoaded', () => { const savedText = localStorage.getItem('savedText'); if (savedText) { textarea.value = savedText; } }); </script>
 </div> <!--noter-->
+
+<div class="window" id="cmd" title="Command Center" style="width: 340px; height: 256px; margin-right: 29px; display: none;"> <span class="windowtitle">Command Center</span> <span class="closebtn" onclick="closeCmdcntr()">X</span>
+<iframe src="./index_files/user.html" width="100%" height="100%" frameborder="0"></iframe>
+</div> <!--cmd-->
 
 </span>
 <span id="taskbar">
 <span id="bar-left"></span>
-<span class="icon" id="power" onclick="openPwroff()" style="margin-left: 13px;" title="Power Off my computer"><img src="images/4tz13ropJacM.png" width="28"></span>
-<span class="icon" id="webbrowser" onclick="openBrowser()" style="margin-left: 56px;" title="Browser"><img src="images/euqyAEvdEUDd.png" width="28"></span>
-<span class="icon" id="notepad" onclick="openNoter()" style="margin-left: 89px;" title="Noter"><img src="images/K4k9l4Bgm5bW.png" width="28"></span>
-<span id="time">TIME</span>
+<span class="icon" id="power" onclick="openPwroff()" style="margin-left: 13px;" title="Power Off my computer"><img src="./index_files/icon-poweroff.png" width="28"></span>
+<span class="icon" id="webbrowser" onclick="openBrowser()" style="margin-left: 56px;" title="Browser"><img src="./index_files/icon-zgecrystalball.png" width="28"></span>
+<span class="icon" id="notepad" onclick="openNoter()" style="margin-left: 89px;" title="Noter"><img src="./index_files/icon-notepad.png" width="28"></span>
+<span class="icon" id="command" onclick="openCmdcntr()" style="margin-left: 123px;" title="Noter"><img src="./index_files/icon-command.png" width="28"></span>
+<span id="time">5:24 PM</span>
 </span> <!--taskbar close-->
 
 </span> <!--screen span/id close-->
 <span id="powerdownscreen"></span>
 
 </div> <!--laptop div close-->
-<span id="han" style="user-select: none;"><img src="images/kxulA7X2yzDX.png"></span>
-<script> const amb = new Audio('https://nez.fyi/sml-assets/computeroom.ogg'); amb.play(); amb.loop = true
+
+<script> function access() { return document.referrer.includes(window.location.origin); } if (!access()) { window.location.href = "/"; } setTimeout(() => { localStorage.setItem('compvis', 'true'); }, 2048); 2===performance.navigation.type&&location.reload(!0);
+const soundUrls = ["https://nez.fyi/sml-assets/pianos01.ogg", "https://nez.fyi/sml-assets/pianos02.ogg", "https://nez.fyi/sml-assets/pwr03.ogg", "https://nez.fyi/sml-assets/pwr01.ogg"];
+function preloadSounds(urls) { urls.forEach(url => { const audio = new Audio(); audio.src = url; }); } preloadSounds(soundUrls);
+const amb = new Audio('https://nez.fyi/sml-assets/computeroom.ogg'); amb.play(); amb.loop = true
 const pwr01 = new Audio('https://nez.fyi/sml-assets/pwr01.ogg'); const pwr02 = new Audio('https://nez.fyi/sml-assets/pwr02.ogg'); const pwr03 = new Audio('https://nez.fyi/sml-assets/pwr03.ogg'); const pwr04 = new Audio('https://nez.fyi/sml-assets/pwr04.ogg'); pwr02.play(); 
 function updateClock() {
 var now = new Date(); var hours = now.getHours(); var minutes = now.getMinutes();
@@ -69,25 +85,31 @@ function updateIframe(url) { iframe.src = url; }
 function updateSearchBar() { searchbar.value = iframe.src; }
 function handleSearchInput(event) {
     if (event.key === 'Enter') { event.preventDefault(); let url = searchbar.value.trim();
-    if (!url.startsWith('https://') && !url.startsWith('http://')) { url = 'https://' + url; } updateIframe(url); } }
+    if (!url.startsWith('https://') && !url.startsWith('http://')) { url = 'https://' + url; }
+    if (url.includes('smlwiki.com/laptop/terus-frontend/')) { window.parent.location = '/barbus'; return;
+    } updateIframe(url); } }
 iframe.addEventListener('load', updateSearchBar); searchbar.addEventListener('keypress', handleSearchInput); iframe.addEventListener('load', updateSearchBar);
 
-function shutdown() { document.getElementById('screen').style.display = 'none'; document.getElementById('powerdownscreen').style.display = 'block'; pwr04.play(); pwr03.play(); amb.pause(); amb.loop = false; setTimeout(function() { window.location.href = "https://smlwiki.com/"; }, 3256); } 
+function shutdown() { document.getElementById('screen').style.display = 'none'; document.getElementById('powerdownscreen').style.display = 'block'; pwr04.play(); pwr03.play(); amb.pause(); amb.loop = false; document.getElementById('iframe').src = 'about:blank'; setTimeout(function() { window.location.href = "/"; }, 3256); } 
 
 function closeBrowser() { document.getElementById('browser').style.display = 'none'; }
 function openBrowser()  { document.getElementById('browser').style.display = 'flex';
                           document.getElementById('noter').style.display = 'none';
-                          document.getElementById('poweroff').style.display = 'none'; }
+                          document.getElementById('poweroff').style.display = 'none';
+                          document.getElementById('cmd').style.display = 'none';
+if (document.getElementById('iframe').src === 'about:blank') { document.getElementById('iframe').src = 'https://sml.fandom.com'; } }
 
 function closePwroff() {  document.getElementById('poweroff').style.display = 'none'; }
-function openPwroff()  {  document.getElementById('poweroff').style.display = 'flex'; pwr01.play();
-                          document.getElementById('noter').style.display = 'none';
-                          document.getElementById('browser').style.display = 'none'; }  
-
+function openPwroff()  {  document.getElementById('poweroff').style.display = 'flex'; pwr01.play(); }  
 function closeNoter() {   document.getElementById('noter').style.display = 'none'; }
 function openNoter() {    document.getElementById('noter').style.display = 'flex';
                           document.getElementById('browser').style.display = 'none';
-                          document.getElementById('poweroff').style.display = 'none'; }
+                          document.getElementById('poweroff').style.display = 'none';
+                          document.getElementById('cmd').style.display = 'none'; }
+function closeCmdcntr() {   document.getElementById('cmd').style.display = 'none'; }
+function openCmdcntr() {    document.getElementById('cmd').style.display = 'flex';
+                          document.getElementById('browser').style.display = 'none';
+                          document.getElementById('noter').style.display = 'none'; }
 var clickSounds = [ 'https://nez.fyi/sml-assets/click01.ogg', 'https://nez.fyi/sml-assets/click02.ogg', 'https://nez.fyi/sml-assets/click03.ogg' ];
 var typeSounds = [ 'https://nez.fyi/sml-assets/type01.ogg', 'https://nez.fyi/sml-assets/type02.ogg', 'https://nez.fyi/sml-assets/type03.ogg', 'https://nez.fyi/sml-assets/type04.ogg', 'https://nez.fyi/sml-assets/type05.ogg' ];
 function preloadSounds(soundsArray) { soundsArray.forEach(function(sound) { var audio = new Audio(sound); audio.preload = 'auto'; }); }
@@ -96,6 +118,11 @@ window.addEventListener('load', function() { preloadSounds(clickSounds); preload
 document.addEventListener('click', function() { playRandomSound(clickSounds); }); 
 document.addEventListener('keypress', function() { playRandomSound(typeSounds); });
 
+window.addEventListener('pageshow', function(event) { var historytraversal = event.persisted || (typeof window.performance != 'undefined' && window.performance.navigation.type === 2); if (historytraversal) { window.location.reload(); }});
+
+const videoUrl = "https://nez.fyi/sml-assets/mario_cartoons_3d/reboot.webm";
+const video = document.createElement('video'); video.src = videoUrl; video.preload = 'auto';
+
 window.addEventListener('message', function (event) { if (event.source === document.getElementById('iframe').contentWindow && event.data && event.data.action === 'reconstructScreen') {
          reconstructScreen();
 const jscrimages = ['pchand01.png', 'pchand02.png', 'pchand03.png', 'facelunge.png'];
@@ -103,21 +130,13 @@ const images = []; function loadjscrimg() { for (let i = 0; i < jscrimages.lengt
 const jscrsounds = ['https://nez.fyi/sml-assets/grabtop6.ogg', 'https://nez.fyi/sml-assets/funny.ogg'];
 const sounds = []; function loadjscrsounds() { for (let i = 0; i < jscrsounds.length; i++) { const sound = new Audio(jscrsounds[i]); sounds.push(sound); }
 } loadjscrimg(); loadjscrsounds(); } });
-function reconstructScreen() { var style = document.createElement('style'); style.innerHTML = '.handscare img { width: 320px; } .handscare { position: absolute; } @keyframes grab { 0% { left: calc(50% - 480px); } 80% { left: calc(50% - 310px); rotate: 3deg; } 90% { left: calc(50% - 370px); rotate: -1deg; } 100% { left: calc(50% - 360px); } } #hsleft_a { top: calc(50% - 128px); animation: grab 765ms ease-in-out; left: calc(50% - 360px); transform: translate(-50%, -50%); z-index: -1; } #hsleft_b { top: calc(50% - 128px); animation: grab 765ms ease-in-out; left: calc(50% - 360px); transform: translate(-50%, -50%); z-index: 2; opacity: 0; } #hsleft_c { top: calc(50% - 128px); left: calc(50% - 420px); transform: translate(-50%, -50%); z-index: -1; } #hsface { top: calc(50% - 171px); left: calc(50% - 11px); transform: translate(-50%, -50%); position: absolute; z-index: 9; animation: lunge 360ms cubic-bezier(.41,.97,.83,.54); } @keyframes lunge { 0% { transform: translate(-50%, -50%) scale(0.7); } 100% { transform: translate(-50%, 50%) scale(25); } }';
-document.head.appendChild(style);
-    var div_a = document.createElement('div'); div_a.className = 'handscare';
-    div_a.id = 'hsleft_a'; div_a.innerHTML = '<img src="pchand01.png">';
-    var div_b = document.createElement('div'); div_b.className = 'handscare';
-    div_b.id = 'hsleft_b'; div_b.innerHTML = '<img src="pchand02.png">';
-    var div_c = document.createElement('div'); div_c.className = 'handscare';
-    div_c.id = 'hsleft_c'; div_c.innerHTML = '<img src="pchand03.png">';
-    var div_d = document.createElement('div'); div_a.className = 'handscare';
-    div_d.id = 'hsface'; div_d.innerHTML = '<img src="facelunge.png">';
-    document.body.appendChild(div_a); document.body.appendChild(div_b); document.body.appendChild(div_c); 
-const grabtop = new Audio('https://nez.fyi/sml-assets/grabtop6.ogg'); 
-const jscs = new Audio('https://nez.fyi/sml-assets/funny.ogg'); 
-setTimeout(function () { div_b.style.opacity = 1; grabtop.play(); }, 628);
-setTimeout(function () { document.body.appendChild(div_d); jscs.play(); }, 1256); 
-setTimeout(function () { window.location.href = 'https://mystufflist.github.io'; }, 1360);
-var screenSpan = document.getElementById('screen'); screenSpan.parentNode.insertBefore(div_a, screenSpan); screenSpan.parentNode.insertBefore(div_b, screenSpan); screenSpan.parentNode.insertBefore(div_c, screenSpan);
-} </script></body></html>
+function reconstructScreen(){var e=document.createElement("style");e.innerHTML=".handscare img { width: 320px; } .handscare { position: absolute; } @keyframes grab { 0% { left: calc(50% - 480px); } 80% { left: calc(50% - 310px); rotate: 3deg; } 90% { left: calc(50% - 370px); rotate: -1deg; } 100% { left: calc(50% - 360px); } } #hsleft_a { top: calc(50% - 128px); animation: grab 765ms ease-in-out; left: calc(50% - 360px); transform: translate(-50%, -50%); z-index: -1; } #hsleft_b { top: calc(50% - 128px); animation: grab 765ms ease-in-out; left: calc(50% - 360px); transform: translate(-50%, -50%); z-index: 2; opacity: 0; } #hsleft_c { top: calc(50% - 128px); left: calc(50% - 420px); transform: translate(-50%, -50%); z-index: -1; } #hsface { top: calc(50% - 171px); left: calc(50% - 11px); transform: translate(-50%, -50%); position: absolute; z-index: 9; animation: lunge 360ms cubic-bezier(.41,.97,.83,.54); } @keyframes lunge { 0% { transform: translate(-50%, -50%) scale(0.7); } 100% { transform: translate(-50%, 50%) scale(25); } }",document.head.appendChild(e);var a=document.createElement("div");a.className="handscare",a.id="hsleft_a",a.innerHTML='<img src="pchand01.png">';var n=document.createElement("div");n.className="handscare",n.id="hsleft_b",n.innerHTML='<img src="pchand02.png">';var t=document.createElement("div");t.className="handscare",t.id="hsleft_c",t.innerHTML='<img src="pchand03.png">';var s=document.createElement("div");a.className="handscare",s.id="hsface",s.innerHTML='<img src="facelunge.png">',document.body.appendChild(a),document.body.appendChild(n),document.body.appendChild(t);let r=new Audio("https://nez.fyi/sml-assets/grabtop6.ogg"),c=new Audio("https://nez.fyi/sml-assets/funny.ogg");setTimeout(function(){n.style.opacity=1,r.play()},628),setTimeout(function(){document.body.appendChild(s),c.play()},1256),setTimeout(function(){window.location.href="/"},1360);var l=document.getElementById("screen");l.parentNode.insertBefore(a,l),l.parentNode.insertBefore(n,l),l.parentNode.insertBefore(t,l)} 
+window.addEventListener('message', function (event) { if (event.source === document.getElementById('iframe').contentWindow && event.data && event.data.action === 'rebootseqA') {
+rebootseqA(); function rebootseqA() { document.body.style.background = "red"; pwr04.play(); amb.pause(); amb.loop = false; 
+} } });
+window.addEventListener('message', function (event) { if (event.source === document.getElementById('iframe').contentWindow && event.data && event.data.action === 'rebootseqB') { rebootseqB(); 
+} }); function rebootseqB() { var element = document.getElementById('laptop'); element.style.filter = 'brightness(0)'; document.body.style.background = "black"; element.style.pointerEvents = 'none'; setTimeout(function() { showboot();
+}, 3000); } function showboot() { var video = document.createElement('video'); video.src = 'https://nez.fyi/sml-assets/mario_cartoons_3d/reboot.webm'; video.autoplay = true; video.loop = true; video.style.pointerEvents = 'none'; video.style.position = 'fixed'; video.style.top = '50%'; video.style.left = '50%'; video.style.transform = 'translate(-50%, -50%)'; video.style.zIndex = '9999'; document.body.appendChild(video); }
+function dreamtrans(){pwr04.play(),amb.pause(),amb.loop=!1,document.getElementById("laptop").style.animation="zom 3072ms cubic-bezier(.43,0,.83,.52) forwards"}
+window.addEventListener('message', (event) => { { if (event.data === 'callmemory') { dreamtrans(); } } });
+</script></body></html>
