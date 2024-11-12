@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>Computer - smlwiki.com</title> <meta name="robots" content="noindex"> <style> body { background-color: #000; overflow: hidden; } body::after { content: ''; top: 0; left: 0; width: 100%; height: 100%; position: absolute; background-color: #000; opacity: 1; animation: fade-in 4.23s cubic-bezier(.4,.57,.35,.98) forwards; animation-delay: 256ms; user-select: none; pointer-events: none; }
+<!DOCTYPE html> <title>Computer - smlwiki.com</title> <meta name="robots" content="noindex"> <style> body { background-color: #000; overflow: hidden; } body::after { content: ''; top: 0; left: 0; width: 100%; height: 100%; position: absolute; background-color: #000; opacity: 1; animation: fade-in 4.23s cubic-bezier(.4,.57,.35,.98) forwards; animation-delay: 256ms; user-select: none; pointer-events: none; }
 @keyframes fade-in {  0% { opacity: 1; } 100% { opacity: 0; } }
 #laptop { position: absolute; display: block; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 #laptop img { pointer-events: none !important; user-select: none !important; position: absolute; top: calc(50% - 3px); left: calc(50% - 1px); transform: translate(-50%, -50%);  }
@@ -8,9 +7,9 @@ rotateX(-15deg) rotateY(1.5deg) rotateZ(0.6deg) scale(0.86) skewY(-0.2deg) skewX
 #powerdownscreen { width: 800px; height: 500px; overflow: hidden; position: absolute; top: calc(50% - 136px); left: calc(50% + 99px); transform: translate(-50%, -50%) 
 rotateX(-15deg) rotateY(1.5deg) rotateZ(0.6deg) scale(0.86) skewY(-0.2deg) skewX(0.8deg); transform-origin: 47% 51% 3px; z-index: -2; display: none; background-color: #000; }
 #screen::after, #powerdownscreen::after { pointer-events: none; content: ""; position: absolute; top: 0; left: 0; width: 482px; height: 393px;
-background-image: url('laptop/pcscreen.jpeg'); background-size: cover; mix-blend-mode: exclusion; opacity: 0.08; transform: scale(1.27); }
+background-image: url('https://smlwiki.com/laptop/pcscreen.jpeg'); background-size: cover; mix-blend-mode: exclusion; opacity: 0.08; transform: scale(1.27); }
 #screen::before, #powerdownscreen::before { pointer-events: none; content: ""; position: absolute; top: 0; left: 0; width: 482px; height: 393px;
-background-image: url('laptop/pcscreen2.jpeg'); background-size: cover; mix-blend-mode: darken; opacity: 0.19; transform: scale(1.27); }
+background-image: url('https://smlwiki.com/laptop/pcscreen2.jpeg'); background-size: cover; mix-blend-mode: darken; opacity: 0.19; transform: scale(1.27); }
 iframe { background-color: #111; }
 #desktop-bg { background-image: url(cast/lance-sighting-fatal.jpeg); background-size: cover; height: 415px; width: 548px; position: absolute; }
 .window { border: solid 8px #ddda; border-top: solid 32px #dddd; border-radius: 4px; outline: solid #2226 2px; margin: auto; padding: 0; width: 468px; height: 320px; margin-top: 6px; z-index: -1; animation: open cubic-bezier(0,.01,.16,1) 256ms; }
@@ -30,37 +29,35 @@ iframe { background-color: #111; }
 @media (max-width: 800px) { #laptop { scale: 0.75; } } @media (max-height: 800px) { #laptop { scale: 0.75; } }
 @media (max-height: 640px) { #laptop { transform: translateX(20px) translateY(256px) scale(1.65); } }
 .windowtitle { position: absolute; margin-top: -22px; margin-left: 3px; font-family: Arial; font-size: 12px; } @keyframes zom {0%{}100%{pointer-events:none;transform: translateY(860px) scale(6);filter:brightness(21)contrast(0.2)}} </style>
-<style id="dark-reader-style" type="text/css">@media screen {
-html {-webkit-transition : -webkit-filter 300ms linear;}
-}</style></head><body><div id="laptop"><img src="./images/laptop-open.png"><img src="./images/note-current.png" style="position: absolute; display: block; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
+<div id="laptop"><img src="https://smlwiki.com/laptop/laptop-open.png"><img src="https://smlwiki.com/laptop/note-current.png" style="position: absolute; display: block; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
 
 <span id="screen"> <span id="desktop-bg">
 
-<span id="poweroff" style="display: none;">
+<span id="poweroff">
 Are you sure you want to power off?<span id="poweroff-buttons"><button onclick="shutdown()">Yes</button><button onclick="closePwroff()">No</button></span>
 </span> <!--power-->
 
-<div class="window" id="browser" title="Browser" style="display: flex;"> <input id="searchbar" type="text" placeholder="Enter URL..."> <span class="closebtn" onclick="closeBrowser()">X</span>
-<iframe src="./images/terus.html" id="iframe" width="468" height="320" frameborder="0"></iframe>
+<div class="window" id="browser" title="Browser"> <input id="searchbar" type="text" placeholder="Enter URL..."> <span class="closebtn" onclick="closeBrowser()">X</span>
+<iframe src="about:blank" id="iframe" width="468" height="320" frameborder="0"></iframe>
 </div> <!--browser-->
 
-<div class="window" id="noter" title="Noter" style="width: fit-content; height: fit-content; margin-right: 29px; display: none;"> <span class="windowtitle">Noter</span> <span class="closebtn" onclick="closeNoter()">X</span>
+<div class="window" id="noter" title="Noter" style="width: fit-content; height: fit-content; margin-right: 29px;"> <span class="windowtitle">Noter</span> <span class="closebtn" onclick="closeNoter()">X</span>
 <textarea id="text" rows="16" cols="32" maxlength="1024" style="border: none; outline: none; font-family: Arial; font-size: 12px; min-width: 128px; min-height: 116px; max-width: 360px; max-height: 320px; scrollbar-width: thin;"></textarea>
 <script> const textarea = document.getElementById('text'); let timeout; textarea.addEventListener('input', () => { clearTimeout(timeout); timeout = setTimeout(() => { localStorage.setItem('savedText', textarea.value); }, 256); }); window.addEventListener('DOMContentLoaded', () => { const savedText = localStorage.getItem('savedText'); if (savedText) { textarea.value = savedText; } }); </script>
 </div> <!--noter-->
 
 <div class="window" id="cmd" title="Command Center" style="width: 340px; height: 256px; margin-right: 29px; display: none;"> <span class="windowtitle">Command Center</span> <span class="closebtn" onclick="closeCmdcntr()">X</span>
-<iframe src="./images/user.html" width="100%" height="100%" frameborder="0"></iframe>
+<iframe src="https://nez.fyi/sml-assets/user.html" width="100%" height="100%" frameborder="0"></iframe>
 </div> <!--cmd-->
 
 </span>
 <span id="taskbar">
 <span id="bar-left"></span>
-<span class="icon" id="power" onclick="openPwroff()" style="margin-left: 13px;" title="Power Off my computer"><img src="./images/icon-poweroff.png" width="28"></span>
-<span class="icon" id="webbrowser" onclick="openBrowser()" style="margin-left: 56px;" title="Browser"><img src="./images/icon-zgecrystalball.png" width="28"></span>
-<span class="icon" id="notepad" onclick="openNoter()" style="margin-left: 89px;" title="Noter"><img src="./images/icon-notepad.png" width="28"></span>
-<span class="icon" id="command" onclick="openCmdcntr()" style="margin-left: 123px;" title="Noter"><img src="./images/icon-command.png" width="28"></span>
-<span id="time">5:35 PM</span>
+<span class="icon" id="power" onclick="openPwroff()" style="margin-left: 13px;" title="Power Off my computer"><img src="https://smlwiki.com/laptop/icon-poweroff.png" width="28"></span>
+<span class="icon" id="webbrowser" onclick="openBrowser()" style="margin-left: 56px;" title="Browser"><img src="https://smlwiki.com/laptop/icon-zgecrystalball.png" width="28"></span>
+<span class="icon" id="notepad" onclick="openNoter()" style="margin-left: 89px;" title="Noter"><img src="https://smlwiki.com/laptop/icon-notepad.png" width="28"></span>
+<span class="icon" id="command" onclick="openCmdcntr()" style="margin-left: 123px;" title="Noter"><img src="https://smlwiki.com/laptop/icon-command.png" width="28"></span>
+<span id="time">TIME</span>
 </span> <!--taskbar close-->
 
 </span> <!--screen span/id close-->
@@ -68,7 +65,7 @@ Are you sure you want to power off?<span id="poweroff-buttons"><button onclick="
 
 </div> <!--laptop div close-->
 
-<script> function access() { return document.referrer.includes(window.location.origin); } if (!access()) { window.location.href = "/"; } setTimeout(() => { localStorage.setItem('compvis', 'true'); }, 2048); 2===performance.navigation.type&&location.reload(!0);
+<script> function access() { return document.referrer.includes(window.location.origin); } setTimeout(() => { localStorage.setItem('compvis', 'true'); }, 2048); 2===performance.navigation.type&&location.reload(!0);
 const soundUrls = ["https://nez.fyi/sml-assets/pianos01.ogg", "https://nez.fyi/sml-assets/pianos02.ogg", "https://nez.fyi/sml-assets/pwr03.ogg", "https://nez.fyi/sml-assets/pwr01.ogg"];
 function preloadSounds(urls) { urls.forEach(url => { const audio = new Audio(); audio.src = url; }); } preloadSounds(soundUrls);
 const amb = new Audio('https://nez.fyi/sml-assets/computeroom.ogg'); amb.play(); amb.loop = true
@@ -138,4 +135,4 @@ window.addEventListener('message', function (event) { if (event.source === docum
 }, 3000); } function showboot() { var video = document.createElement('video'); video.src = 'https://nez.fyi/sml-assets/mario_cartoons_3d/reboot.webm'; video.autoplay = true; video.loop = true; video.style.pointerEvents = 'none'; video.style.position = 'fixed'; video.style.top = '50%'; video.style.left = '50%'; video.style.transform = 'translate(-50%, -50%)'; video.style.zIndex = '9999'; document.body.appendChild(video); }
 function dreamtrans(){pwr04.play(),amb.pause(),amb.loop=!1,document.getElementById("laptop").style.animation="zom 3072ms cubic-bezier(.43,0,.83,.52) forwards"}
 window.addEventListener('message', (event) => { { if (event.data === 'callmemory') { dreamtrans(); } } });
-</script></body></html>
+</script>
