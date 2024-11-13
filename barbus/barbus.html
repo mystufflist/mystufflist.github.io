@@ -1,0 +1,24 @@
+<!DOCTYPE html> <meta charset="UTF-8"> <style> ::-webkit-scrollbar { width: 0em; } ::-webkit-scrollbar-track { background: #000; } * { scrollbar-width: thin; scrollbar-color: #000 #000; }
+body { background-color: #000; 
+display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+#video-load { position: relative; flex-direction: column; }
+#video { width: 640px; border: solid 1px #666; position: relative; }
+#pic-load { position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+display: none; justify-content: center; align-items: center; }
+#js-pic { max-width: 100%; max-height: 100%; transform: scale(0); margin-left: -12px;
+transition: transform 0.1s linear; } #curse { position: absolute; width: 256px; height: 30px; background: #0000; bottom: 81px; right: 16px; z-index: 3; user-select: none; }
+#block { background-color: blue; color: #fff; text-align: center; width: 640px; }
+#text { font-size: 12px; padding-block: 6px;}
+</style> <body> <div id="video-load"> <video id="video" controls>
+<source src="https://nez.fyi/sml-assets/godtellsme.mp4" type="video/mp4">  </video> <div id="curse"></div>
+<div id="block"> <p id="text">一日中不気味なビデオを見てはいけない...さもないとこうなる。これはダークサイドを持つ美しい少女の物語だ。悪い考えに過度にさらされると、危険な状況に陥る。</p> </div>
+<div id="pic-load"> <img id="js-pic" src="https://img.nez.fyi/sml2/mm10.png"> </div> </div>
+<script> if (!window.location.href.includes("#s")) { localStorage.setItem('trespass', 'true'); } const preloadAssets = [ "https://img.nez.fyi/sml2/mm12.png", "https://img.nez.fyi/sml2/mm10.png" ]; preloadAssets.forEach((imageUrl) => { const img = new Image(); img.src = imageUrl; });
+const video = document.getElementById("video"); const picContainer = document.getElementById("pic-load"); const jsPic = document.getElementById("js-pic");
+       video.addEventListener("timeupdate", function() {
+   if (video.currentTime >= 43.12 && !picContainer.style.display) { picContainer.style.display = "flex";
+requestAnimationFrame(() => { jsPic.style.transform = "scale(3.1)";
+     setTimeout(function () { jsPic.src = "https://img.nez.fyi/sml2/mm12.png"; }, 90); }); } });
+  video.addEventListener("ended", function() { setTimeout(function () { window.location.href = "/"; }, 1323); });
+  video.addEventListener('timeupdate', () => { if (video.currentTime > 34) { video.style.pointerEvents = 'none'; } else { video.style.pointerEvents = 'auto'; } });
+</script> </body>
