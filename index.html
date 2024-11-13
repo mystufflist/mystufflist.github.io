@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", checkAndHideLillogan); document.ge
 <script> function choose(max) { return Math.floor(Math.random() * (max + 1)); } var splash = document.getElementById('splash'); if (choose(2) === 0) { splash.style.display = 'block'; } if (splash.style.display !== 'none') { 
 var newText = choose(1) === 0 ? '7 ciphers, 7 letters, 1 meaning' : '6 out of 7…'; splash.textContent = newText; } </script>
 <style> #sense-warning { padding: 10px; margin: 0; background-color: #a00a; border: double 3px #444; text-align: center; font-family: Arial; color: #eee; text-shadow: 0 2px 1px #000; display: block; position: absolute; top: 0; left: 50%; transform: translateX(-50%); opacity: 0.9; transition: ease 128ms; z-index: 8; font-size: 14px; line-height: 1; } #sense-warning:hover { opacity: 0.5 } </style>
-<div id="sense-warning"><b>Photosensitivity Warning</b><br>This website contains flashing colors. Browse at your own discretion. <button id="close-warning">x</button>
+<div id="sense-warning"><b>Note:</b><br>This website is still in work progress<button id="close-warning">x</button>
 </div> <script> function hideWarning() { document.getElementById("sense-warning").style.display = "none"; localStorage.setItem("warningClosed", "true"); }
 document.addEventListener("DOMContentLoaded", function () { var warningClosed = localStorage.getItem("warningClosed"); if (warningClosed === "true") { document.getElementById("sense-warning").style.display = "none"; }
 }); document.getElementById("close-warning").addEventListener("click", function () { hideWarning(); });
