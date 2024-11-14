@@ -12,7 +12,7 @@ html, body { cursor: url('https://mystufflist.github.io/rancid/images/cursor.png
 <div id="volume"> <div id="volume-line"></div> </div>
 <div id="timecode"></div> <div id="fs" class="button"><img src="https://mystufflist.github.io/rancid/images/button4.png"></div> </div>
 <script> let video = document.getElementById('sourcev'); let srcurl = new URLSearchParams(window.location.search); // if (window.self == window.top) { window.location.href = "about:blank"; } 
-video.addEventListener('play', () => { document.getElementById('playpausesymbol').src = 'button3.png'; }); video.addEventListener('pause', () => { document.getElementById('playpausesymbol').src = 'button2.png'; });
+video.addEventListener('play', () => { document.getElementById('playpausesymbol').src = '/images/button3.png'; }); video.addEventListener('pause', () => { document.getElementById('playpausesymbol').src = '/images/button2.png'; });
 document.getElementById('pp').addEventListener('click', () => { if (video.paused) { video.play(); } else { video.pause(); } });
 video.addEventListener('loadedmetadata', () => {const durm = Math.floor(video.duration / 60); const durs = Math.floor(video.duration % 60).toString().padStart(2, '0');
  document.getElementById('timecode').textContent = `0:00 / ${durm}:${durs}`; });
