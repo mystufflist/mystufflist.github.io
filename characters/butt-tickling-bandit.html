@@ -1,0 +1,53 @@
+<!DOCTYPE html> <head> <link rel="icon" type="image/png" href="../global/favicon.png"> <meta charset="UTF-8"> <meta name="robots" content="noindex"> <title>The Butt-tickling Bandit - smlwiki.com</title> <meta name="description" content="Not a kitty cat."/> </head> <html lang="en"> <link rel="preload" href="character_pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="character_pages.css"></noscript>
+<style> .none { font-style:italic; color: #900; cursor: pointer; }.none:hover { color: #a00; text-decoration: underline; } #authorsign { position: absolute; bottom: 3px; right: 3px; font-size: 13px; font-weight: bold; font-style: italic; color: #756a; font-family: Consolas; text-align: right; } #authorsign:hover { color: #765; } </style> <body> <div id="header-container"></div>
+  <div id="container"><div id="text-content">
+    <h1 style="padding-bottom: 42px; border-bottom: solid 1px #500;">The Butt-tickling Bandit</h1>
+        <div class="text-entry">
+                <h2>Biography</h2>
+                <p>The Butt-tickling Bandit (real name Dylan George) was born on July 33rd, . He had a tumultuous upbringing but a strong career ahead of him before he had been criminally charged. He graduated from Colesdale University with a degree in mechanical engineering. He worked as an electricians apprentice for some odd years before applying to work at IBM, where he later developed the new universal standard serial port: USB. His father appeared in <a class="none" title="A page for this SML Movie doesn't exist yet.">"The Coverup!"</a> in the background, preformed by his real father. Dylan had been more friendly to children and interested in content targeted toward younger audiences, detailed by colleagues and those around him, which is further explained in the next section.</p>
+            </div>
+        <div class="text-entry">
+                <h2>DeMarcus Nielson</h2>
+                <p>One of Dylan's colleauges at IBM, Dr. Nielson, graduated with a minor degree in psychology and had a clinical license to use it. Working alongside Dylan, Nielson was fascinated by Dylan's child-like wonderment but simultaneous capability to achieve accomplishments in his adult life. Dylan achieved great feats, and while the other people around him would chalk it up to luck, or assuming Dylan was simply "on the spectrum" and discounting his work for it, Dr. Neilson wanted to examine Dylan and explore his impulses.<p></p>Neilson's spontaneous case study of Dylan lead to more and more disturbing results as it went on, and Neilson had accidentally started to encourage Dylan to fester his behavior for the sake of the study. 
+                </p>
+            </div>
+        <div class="text-entry">
+                <h2>Anamnesis (post-study)</h2>
+                <p>Dylan was initially apprehensive toward describing his past, but as the study advanced, he became more comfortable describing gruesome events and details. Nielson took particular notice to the switch in Dylan's demeanor, that would lead to his childlike persona escalating, even when divulging horrific recollections of abusive events. Nielson determined he'd hit a wall in the analysis after Dylan became disturbingly comfortable describing abusive situations involving children—and not just his own. Dylan started to outwardly fantasize about people and situations which Nielson found so dismaying, he'd begun doing everything in his power to admit Dylan to a psychiatric ward and cut the casual one-on-one analysis. This was to the extreme dismay of Dylan.
+                </p>
+            </div>
+        <div class="text-entry">
+                <h2>The death of Dr. Nielson</h2>
+                <p>Days after Dylan had been admitted to the mental hospital, it was reported that Dr. Nielson was discovered dead outside of his home to a stabbing. Nielson was stabbed in the chest two times. The identity of the murderer is undetermined as an investigation into the attack is still ongoing.
+                </p>
+            </div>
+        <div class="text-entry">
+                <h2>Modern day</h2>
+                <p>Dylan walks free due to the current state of things.
+                </p>
+            </div>
+        <div class="text-entry">
+                <h2>Fun facts</h2>
+                <p>
+    •The Butt-tickling Bandit was portrayed by <a href="../cast/lovell.html">Lovell</a><br>
+    •This character has appeared in 19 SML Movies, including 3 missing episodes
+                </p>
+            </div>
+        <span id="authorsign">Page submitted by 'Anonymous'</span>
+                      </div>
+<div id="image-frame"> <div class="textbox">Appearance:</div> <div class="appearance-buttons"> 
+    <button onclick="changeAppearance('current')">Current</button>
+    <button onclick="changeAppearance('former')">Former</button> </div>
+<div id="image-container"> <img src="prev.png"> </div>
+<div class="infobox"><i>"Want some candy?"</i></div> </div> </div>
+</body> </html>
+<script> changeAppearance('current');
+function changeAppearance(appearance) {
+  const buttons = document.querySelectorAll('.appearance-buttons button');
+        buttons.forEach(btn => btn.classList.remove('pressed'));
+  const image = document.querySelector('#image-container img');
+       if (appearance === 'current') { image.src = '/characters/prev.png';
+} else if (appearance === 'former') { image.src = '/characters/dylan.jpeg'; }
+  const pressedButton = Array.from(buttons).find(button => button.innerText.toLowerCase().includes(appearance)); pressedButton.classList.add('pressed'); }
+</script>
+<script> fetch('/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>

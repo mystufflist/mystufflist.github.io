@@ -1,20 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><script src="js/analytics.js" type="text/javascript"></script>
-<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app225.us.archive.org';v.server_ms=530;archive_analytics.send_pageview({});});</script>
-<script type="text/javascript" src="js/bundle-playback.js" charset="utf-8"></script>
-<script type="text/javascript" src="js/wombat.js" charset="utf-8"></script>
-<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
-<script type="text/javascript" src="js/ruffle.js"></script>
-<script type="text/javascript">
-    __wm.init("https://web.archive.org/web");
-  __wm.wombat("https://smlwiki.com/characters/marvin","20240324225052","https://web.archive.org/","web","https://web-static.archive.org/_static/",
-	      "1711320652");
-</script>
-<link rel="stylesheet" type="text/css" href="css/banner-styles.css">
-<link rel="stylesheet" type="text/css" href="css/iconochive.css">
-<!-- End Wayback Rewrite JS Include -->
- <link rel="icon" type="image/png" href="images/favicon.png"> <meta charset="UTF-8"> <meta name="robots" content="noindex"> <title>Marvin - smlwiki.com</title> <script>__wm.rw(0);</script></head> 
-  <link rel="preload" href="character_pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="character_pages.css"></noscript>
- <div id="header-container"></div>
+<!DOCTYPE html> <html lang="en"> <meta charset="UTF-8"> <link rel="preload" href="character_pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="character_pages.css"></noscript>
+<body> <div id="header-container"></div>
   <div id="container"><div id="text-content">
     <h1 style="padding-bottom: 42px; border-bottom: solid 1px #500;">Marvin</h1>
         <div class="text-entry">
@@ -33,22 +18,23 @@
                 <i>"CRAB GIVING BIRTH FUCK YOU FUCK YOU"</i><br>
             </div>
                         </div>
-<div id="image-frame"> <div class="textbox">Apperance:</div> <div class="appearance-buttons">
-    <button onclick="changeAppearance('current')" class="pressed">Current</button>
+<div id="image-frame"> <div class="textbox">Appearance:</div> <div class="appearance-buttons">
+    <button onclick="changeAppearance('current')">Current</button>
     <button onclick="changeAppearance('former')">Former</button> </div>
-<div id="image-container"> <img src="https://mystufflist.github.io/characters/images/marvinblood.jpeg"> </div>
-<div class="infobox"><span style="opacity: 0.03;">GNDWUO,</span> I would eat him</div> </div>
+<div id="image-container"> <img src="marvinblood.jpeg"> </div>
+<div class="infobox"><span style="opacity: 0.03;">GNDWUO,</span>I would eat him</div> </div>
   </div>
 <script> changeAppearance('current');
 function changeAppearance(appearance) {
   const buttons = document.querySelectorAll('.appearance-buttons button');
         buttons.forEach(btn => btn.classList.remove('pressed'));
   const image = document.querySelector('#image-container img');
-       if (appearance === 'current') { image.src = 'https://mystufflist.github.io/characters/images/marvinblood.jpeg';
-} else if (appearance === 'former') { image.src = 'https://mystufflist.github.io/characters/images/previousmarvin.JPG'; }
+       if (appearance === 'current') { image.src = 'marvinblood.jpeg';
+} else if (appearance === 'former') { image.src = 'previousmarvin.jpg'; }
   const pressedButton = Array.from(buttons).find(button => button.innerText.toLowerCase().includes(appearance)); pressedButton.classList.add('pressed'); }
-const audio = new Audio('https://nez.fyi/sml-assets/char.ogg'); audio.loop = true; audio.play();
-</script>  
+  function playAmb() {
+  const audio = new Audio('https://nez.fyi/sml-assets/char.ogg'); audio.loop = true; audio.play();
+   document.body.removeEventListener('mousemove', playAmb); } document.body.addEventListener('mousemove', playAmb);
+</script> </body> </html>
 
-<script> fetch('https://mystufflist.github.io/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>
-</body></html>
+<script> fetch('../global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>

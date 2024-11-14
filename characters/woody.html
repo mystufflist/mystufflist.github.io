@@ -1,0 +1,42 @@
+<!DOCTYPE html> <head> <link rel="icon" type="image/png" href="../global/favicon.png"> <meta charset="UTF-8"> <meta name="robots" content="noindex"> <title>Woody - smlwiki.com</title> <meta name="description" content="You gotta help me…"/> </head> 
+<html lang="en"> <link rel="preload" href="character_pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="character_pages.css"></noscript> <style> #authorsign { position: absolute; bottom: 3px; right: 3px; font-size: 13px; font-weight: bold; font-style: italic; color: #756a; font-family: Consolas; text-align: right; } #authorsign:hover { color: #765; } </style>
+<style> #woody-layers { position: relative; pointer-events: none; } #woody-layers  img { position: absolute; user-select: none; } 
+@keyframes rotate { 0% { transform: rotate(0deg); } 50% { transform: rotate(13deg); } 100% { transform: rotate(-6deg); } }
+#woodyhead { animation: rotate linear infinite 69ms; position: relative; }
+</style>
+
+<body> <div id="header-container"></div>
+  <div id="container"><div id="text-content">
+    <h1 style="padding-bottom: 42px; border-bottom: solid 1px #500;">Needy Woody here! (Urgent!!)</h1>
+        <div class="text-entry">
+                <h2>Introduction</h2>
+                <p>Howdy! Name's Woody, I've been informed today by ma'h old friend Tony the Tiger about the existence of this fancy ol' site right here. I'm only here to ask why nobody ever told me Shrimpos were from the sea and not from land! This started to intrigue me after my good ol' papa vanished one fine day from mama's house, and I've started to feel very wrong lately, so I hope I can describe it briefly enough down this here hell site!</p>
+            </div>
+        <div class="text-entry">
+                <h2>Condition</h2>
+                <p>These darn fakers have been eating me inside out, playin' with ma' insides as they force themselves out of mah' capillaries! No doctor has seen a way to make em' stop coming, nor how they're reproducing inside me, all they know is that they're slowly eating me inside out like the gorsh darn Devil at a buffet! Slow but picky bastards they are!</p>
+            </div>
+        <div class="text-entry">
+                <h2>Closing Thoughts</h2>
+                <p>If I don't get any info on what to do soon, I'll probably join me grand pappy and mah' probably dead father cuz if he went through the same as me he probably didn't last as long either due to his ol' weak bum. I'm probably a lost cause, but a lil' hope ain't never hurt anybody. Yee-haw ya'll.</p>
+            </div>
+                   
+    <span id="authorsign">Page submitted by 'Anonymous'</span> </div>
+<div id="image-frame"> <div class="textbox">Appearance:</div> <div class="appearance-buttons"> <button style="width: 100%;">Current</button> </div>
+<div id="image-container"> <div id="woody-layers"><img src="user-submissions/woody1.png"><img src="user-submissions/woody2.png" id="woodyspook"><img src="user-submissions/woody3.png" id="woodyhead"> </div> </div>
+<div class="infobox">"What... What have I've been huntin' all these years?"</div> </div> </div>
+</body> </html>
+<audio id="glitch" src="https://nez.fyi/sml-assets/glitch-from-void.ogg" loop muted autoplay></audio> <script>
+const audioContext = new (window.AudioContext || window.webkitAudioContext)(); const gainNode = audioContext.createGain();
+ fetch('https://nez.fyi/sml-assets/flies.ogg') .then(response => response.arrayBuffer()) .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
+.then(audioBuffer => { const source = audioContext.createBufferSource();
+source.buffer = audioBuffer; source.loop = true; source.connect(gainNode);
+gainNode.connect(audioContext.destination); source.start(); gainNode.gain.setValueAtTime(0.001, audioContext.currentTime);
+gainNode.gain.linearRampToValueAtTime(0.8, audioContext.currentTime + 256); });
+function delay() { return Math.floor(Math.random() * (256 - 19 + 1)) + 19; }
+function toggle() { var woodyhead = document.getElementById("woodyhead"); var woodyspook = document.getElementById("woodyspook");
+var isVisible = Math.random() < 0.06; woodyhead.style.visibility = isVisible ? "visible" : "hidden"; woodyspook.style.visibility = isVisible ? "visible" : "hidden";
+  if (isVisible) { glitch.muted = false;
+} else { glitch.muted = true; } setTimeout(toggle, delay()); } toggle(); </script>
+
+<script> fetch('../global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>

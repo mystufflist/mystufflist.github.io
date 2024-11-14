@@ -1,0 +1,34 @@
+<!DOCTYPE html> <head> <link rel="icon" type="image/png" href="../global/favicon.png"> <meta charset="UTF-8"> <meta name="robots" content="noindex"> <title>Joseph - smlwiki.com</title> <meta name="description" content="Joseph is known for his comedic relief. He is best friends with Junior and Cody and frequently accompanies the two on their playful adventures. Joseph is homel…"/> </head> <html lang="en"> <link rel="preload" href="character_pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="character_pages.css"></noscript>
+<body> <div id="header-container"></div>
+  <div id="container"><div id="text-content">
+    <h1 style="padding-bottom: 42px; border-bottom: solid 1px #500;">Joseph Hisfriendfromschool</h1>
+        <div class="text-entry">
+                <h2>Personality</h2>
+                <p>Joseph isolates himself from the rest, finding most comfort into what he used to find as troubling before the incident. He is often heard crying, but gets very aggressive when anybody tries to comfort him, often misinterpreting it as a threat. He is exclusively more docile and friendlier to the unbanished demoness Seraphina. It is often difficult to bring Joseph to the others when for gatherings.  </p>
+            </div>
+        <div class="text-entry">
+                <h2>Appearance</h2>
+                <p>Missing an eye from his socket, and one is barely hanging on, with its pupil darted from below. His arm was ripped out of him post-burning when attempting to recover him, and the burns left him in the process of melting, with his jaw too big for his head. Joseph's clothes are ripped, with his lucky basketball shirt having a huge tear on the front and back, and his shorts also containing massive tears.</p>
+            </div>
+        <div class="text-entry">
+                <h2>Trivia</h2>
+                <p>•He loves basketball!<br>•Joseph was one of the very first!<br>•Joseph, alongside <a href="cody.html">Cody</a>, debut in "Bowser Junior's Summer School!"<br>•He has fucking aids </p>
+            </div>
+                        </div>
+<div id="image-frame"> <div class="textbox">Appearance:</div> <div class="appearance-buttons">
+    <button onclick="changeAppearance('current')">Current</button>
+    <button onclick="changeAppearance('former')">Former</button> </div>
+<div id="image-container"> <img src="355462214023211.png"> </div>
+<div class="infobox">Died in 2017 from a massive burn injury after being microwaved alive. The injuries caused him to lose his arm and eye, but remain conscious. His mother has yet to know about the incident. </div> </div>
+  </div>
+<script> changeAppearance('current');
+function changeAppearance(appearance) {
+  const buttons = document.querySelectorAll('.appearance-buttons button');
+        buttons.forEach(btn => btn.classList.remove('pressed'));
+  const image = document.querySelector('#image-container img');
+       if (appearance === 'current') { image.src = '355462214023211.png';
+} else if (appearance === 'former') { image.src = 'joseph.jpg'; }
+  const pressedButton = Array.from(buttons).find(button => button.innerText.toLowerCase().includes(appearance)); pressedButton.classList.add('pressed'); }
+const audio = new Audio('https://nez.fyi/sml-assets/char.ogg'); audio.loop = true; audio.play();
+</script> </body> </html>
+<script> fetch('../global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>

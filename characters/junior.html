@@ -1,21 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><script src="js/analytics.js" type="text/javascript"></script>
-<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app213.us.archive.org';v.server_ms=185;archive_analytics.send_pageview({});});</script>
-<script type="text/javascript" src="js/bundle-playback.js" charset="utf-8"></script>
-<script type="text/javascript" src="js/wombat.js" charset="utf-8"></script>
-<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
-<script type="text/javascript" src="js/ruffle.js"></script>
-<script type="text/javascript">
-    __wm.init("https://web.archive.org/web");
-  __wm.wombat("https://smlwiki.com/characters/junior.html","20240603232714","https://web.archive.org/","web","https://web-static.archive.org/_static/",
-	      "1717457234");
-</script>
-<link rel="stylesheet" type="text/css" href="css/banner-styles.css">
-<link rel="stylesheet" type="text/css" href="css/iconochive.css">
-<!-- End Wayback Rewrite JS Include -->
- <link rel="icon" type="image/png" href="images/favicon.png"> <meta charset="UTF-8"> <meta name="robots" content="noindex"> <title>Junior - smlwiki.com</title> <meta name="description" content="Junior is a major character in SML. Junior is regarded for his silly antics and hysterics. He commonly bothers Chef PeePee, who is a big opponent to his behavio…"> <script>__wm.rw(0);</script></head> 
- 
-  <link rel="preload" href="character_pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="https://mystufflist.github.io/characters/character_pages.css"></noscript>
- <div id="header-container"></div>
+<!DOCTYPE html> <head> <link rel="icon" type="image/png" href="../global/favicon.png"> <meta charset="UTF-8"> <meta name="robots" content="noindex"> <title>Junior - smlwiki.com</title> <meta name="description" content="Junior is a major character in SML. Junior is regarded for his silly antics and hysterics. He commonly bothers Chef PeePee, who is a big opponent to his behavio…"/> </head> <html lang="en"> <link rel="preload" href="character_pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="character_pages.css"></noscript>
+<body> <div id="header-container"></div>
   <div id="container"><div id="text-content">
     <h1 style="padding-bottom: 42px; border-bottom: solid 1px #500;">Braxton Jr.</h1>
         <div class="text-entry">
@@ -28,13 +12,13 @@
             </div>
         <div class="text-entry">
                 <h2>Quotes</h2>
-                <p>"Sing, O goddess, the anger of Peleus' son Achilles that caused the Greeks untold pain, hurling many valiant souls to Hades and leaving their bodies as feasts for dogs and birds, as the will of Zeus unfolded."<br> -<a href="https://web.archive.org/web/20240603232714/https://smlwiki.com/characters/homer">Homer</a>, "The Iliad" </p>
+                <p>"Sing, O goddess, the anger of Peleus' son Achilles that caused the Greeks untold pain, hurling many valiant souls to Hades and leaving their bodies as feasts for dogs and birds, as the will of Zeus unfolded."<br> -<a href="homer.html">Homer</a>, "The Iliad" </p>
             </div>
                         </div>
-<div id="image-frame"> <div class="textbox">Apperance:</div> <div class="appearance-buttons">
-    <button onclick="changeAppearance('apotheosis')" class="pressed">apotheosis</button>
+<div id="image-frame"> <div class="textbox">Gaze:</div> <div class="appearance-buttons">
+    <button onclick="changeAppearance('apotheosis')">apotheosis</button>
     <button onclick="changeAppearance('abasement')">abasement</button> </div>
-<div id="image-container"> <img src="https://mystufflist.github.io/characters/images/juniorr.png"> </div>
+<div id="image-container"> <img src="juniorr.png"> </div>
 <div class="infobox">he resides yet within the sanctum, enduring amidst the echoes of time's embrace </div> </div>
   </div>
 <script> changeAppearance('apotheosis');
@@ -46,7 +30,6 @@ function changeAppearance(appearance) {
 } else if (appearance === 'abasement') { image.src = 'juniorrr.png'; }
   const pressedButton = Array.from(buttons).find(button => button.innerText.toLowerCase().includes(appearance)); pressedButton.classList.add('pressed'); }
 const audio = new Audio('https://nez.fyi/sml-assets/char.ogg'); audio.loop = true; audio.play();
-</script>  
+</script> </body> </html>
 
-<script> fetch('https://mystufflist.github.io/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>
-</body></html>
+<script> fetch('/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>

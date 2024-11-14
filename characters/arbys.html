@@ -1,0 +1,36 @@
+<!DOCTYPE html> <head> <link rel="icon" type="image/png" href="../global/favicon.png"> <meta charset="UTF-8"> <meta name="robots" content="noindex"> <title>Little Sweaty Meats - smlwiki.com</title> <meta name="description" content="I'm sweat..!"/> </head> <html lang="en"> <link rel="preload" href="character_pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="character_pages.css"></noscript>
+<style> #authorsign { position: absolute; bottom: 3px; right: 3px; font-size: 13px; font-weight: bold; font-style: italic; color: #756a; font-family: Consolas; text-align: right; } #authorsign:hover { color: #765; } </style> <body> <div id="header-container"></div>
+  <div id="container"><div id="text-content">
+    <h1 style="padding-bottom: 42px; border-bottom: solid 1px #500;">Little Sweaty Meats</h1>
+        <div class="text-entry">
+                <h2>Field One</h2>
+                <p>Little Sweaty Meats is the name given to the collective mass of drippings that come off of newly cloned Marvins. It is the antithesis to Marvin's entire being. This is exactly what makes Little Sweaty so fucking badass all the time.</p>
+            </div>
+        <div class="text-entry">
+                <h2>Field One 2</h2>
+                <p>Sweaty isn't orthodoxly cloneable due to his nature, but very capable of creating useful results. He resides under the cloning facility near the collection vat, surrounded by his iconic Computers. I feel the need to mention that despite his intense desire to be eaten, he is not fit for consumption. Soon, however, things will change. Many things will change.</p>
+            </div>
+        <div class="text-entry">
+                <h2>Quotes
+                </h2>
+                <p>"Oh fuck yes baby oh FAWK yes! that shits fucking awesome haha"<br><i>-The Meat</i> on "Getting Eaten"</p>
+            </div>
+        <span id="authorsign">Page submitted by 'Anonymous'</span>
+                        </div>
+<div id="image-frame"> <div class="textbox">Appearance:</div> <div class="appearance-buttons">
+    <button onclick="changeAppearance('current')">Current</button>
+    <button onclick="changeAppearance('former')">Soon</button> </div>
+<div id="image-container"> <img src="user-submissions/meatsweats.jpeg"> </div>
+<div class="infobox">Nothing but the pure, sweet fat of the hog.</div> </div>
+  </div>
+<script> changeAppearance('current');
+function changeAppearance(appearance) {
+  const buttons = document.querySelectorAll('.appearance-buttons button');
+        buttons.forEach(btn => btn.classList.remove('pressed'));
+  const image = document.querySelector('#image-container img');
+       if (appearance === 'current') { image.src = 'user-submissions/meatsweats.jpeg';
+} else if (appearance === 'former') { image.src = 'user-submissions/burger.jpeg'; }
+  const pressedButton = Array.from(buttons).find(button => button.innerText.toLowerCase().includes(appearance)); pressedButton.classList.add('pressed'); }
+const audio = new Audio('https://nez.fyi/sml-assets/arbys.ogg'); audio.play();
+</script> </body> </html>
+<script> fetch('../global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html> <head> <link rel="icon" type="image/png" href="../global/favicon.png"> <meta charset="UTF-8"> <meta name="robots" content="noindex"> <title>SpongeBob - smlwiki.com</title> <meta name="description" content="I'm SpongeBob..!"/> </head> <html lang="en"> <link rel="preload" href="character_pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="character_pages.css"></noscript>
+<style> #authorsign { position: absolute; bottom: 3px; right: 3px; font-size: 13px; font-weight: bold; font-style: italic; color: #756a; font-family: Consolas; text-align: right; } #authorsign:hover { color: #765; } </style> <body> <div id="header-container"></div>
+  <div id="container"><div id="text-content">
+    <h1 style="padding-bottom: 42px; border-bottom: solid 1px #500;">SpongeBob SquarePants</h1>
+        <div class="text-entry">
+                <h2>Description</h2>
+                <p>SpongeBob SquarePants is a square sea sponge who has appeared in a few vintage episodes of SML. He is kind-hearted and an amazing cook! He looks more like a dish sponge, but he is a sea sponge. He has blue eyes and holes all over him. His favorite outfit is brown squarepants with a red tie. He also bears a striking resemblance to <a href="https://smlwiki.com/page/escapees">damie_an</a>.</p>
+            </div>
+        <div class="text-entry">
+                <h2>Occupation</h2>
+                <p>He is a fry-cook at the Krusty Krab, flipping patties all day and every day! The patties are made with 𝓵𝓸𝓿𝓮.</p>
+            </div>
+        <div class="text-entry">
+                <h2>His Dark Secret.</h2>
+                <p>The love inside the Krabby Patties? Doesn't exist. What he truly means is that the meat of the patties is something a little specially tailored for the restaurant.</p>
+            </div>
+        <span id="authorsign">Page submitted by 'Anonymous' & 'Anonymous'</span>
+                        </div>
+<div id="image-frame"> <div class="textbox">Appearance:</div> <div class="appearance-buttons">
+    <button onclick="changeAppearance('current')">Current</button>
+    <button onclick="changeAppearance('former')">Former</button> </div>
+<div id="image-container"> <img src="user-submissions/thebob.jpeg"> </div>
+<div class="infobox">the bob</div> </div>
+  </div>
+<script> changeAppearance('current');
+function changeAppearance(appearance) {
+  const buttons = document.querySelectorAll('.appearance-buttons button');
+        buttons.forEach(btn => btn.classList.remove('pressed'));
+  const image = document.querySelector('#image-container img');
+       if (appearance === 'current') { image.src = 'user-submissions/thebob.jpeg';
+} else if (appearance === 'former') { image.src = 'user-submissions/spongebath.jpeg'; }
+  const pressedButton = Array.from(buttons).find(button => button.innerText.toLowerCase().includes(appearance)); pressedButton.classList.add('pressed'); }
+const audio = new Audio('https://nez.fyi/sml-assets/char.ogg'); audio.loop = true; audio.play();
+</script> </body> </html>
+<script> fetch('../global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>

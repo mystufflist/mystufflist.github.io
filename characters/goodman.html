@@ -1,0 +1,35 @@
+<!DOCTYPE html> <head> <link rel="icon" type="image/png" href="../global/favicon.png"> <meta charset="UTF-8"> <meta name="robots" content="noindex"> <title>Mr. Goodman - smlwiki.com</title> <meta name="description" content="Mr. Goodman is an uptight, greedy stickler. He is the landlord of Marvin and Rose. Goodman is played by Lance Thirtyacre, and is one of Lance's favorite characters to play because of Goodman's…"/> </head> <html lang="en"> <link rel="preload" href="character_pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="character_pages.css"></noscript>
+<style> #authorsign { position: absolute; bottom: 3px; right: 3px; font-size: 13px; font-weight: bold; font-style: italic; color: #756a; font-family: Consolas; text-align: right; } #authorsign:hover { color: #765; } </style> <body> <div id="header-container"></div>
+  <div id="container"><div id="text-content">
+    <h1 style="padding-bottom: 42px; border-bottom: solid 1px #500;">Mr. Goodman</h1>
+        <div class="text-entry">
+                <h2>General Info</h2>
+                <p>A rich hardass that takes whatever it can to pay the house with their other hobbies. He always finds a way to torture the family for his own pleasure without thinking deeply to the hearts that be.</p>
+            </div>
+        <div class="text-entry">
+                <h2>Description</h2>
+                <p>Once a well-known news reporter that's now a preserved class type for a unidentified creeded authority. I remembered that one report fondly for where a dismembered figure was found in my back porch, My ego was cured. He recommended me to join the cause and to consume the remains as you unfold your "true self" of the pain.</p>
+            </div>
+        <div class="text-entry">
+                <h2>Quotes</h2>
+                <p><i>"<a href="marvin.html">Marvin</a> wasn't able to pay his house payment, poor fuck!" </i><br><i>"Something about a sighting of a bright nebula that's been found during the expectations, poor ass scientists."</i><br><i>"This shit's been aching me so hard and I cant get enough to pay them back, I'm FUCKED!"</i><br><i>"Ê̴̫M̵̩̅ ̶̩̌D̶̥͘E̵̺͊Ş̷͒S̴̨̅È̸͉L̵̥̏B̷̰͋ ̷̚͜D̸̼͑N̵̠̄Ǒ̸͕Ȳ̸͖Ě̴͔B̶̳͋ ̸͈̍Ț̶̀A̷̪̋Ȅ̶͓R̷̪͒G̵̱̅ ̴̬̑E̷͎͝H̴͉̐T̶̯̐"</i></p>
+                </div>
+        <span id="authorsign">Page submitted by 'Manny204553'</span>
+                        </div>
+<div id="image-frame"> <div class="textbox">Appearance:</div> <div class="appearance-buttons">
+    <button onclick="changeAppearance('current')">Current</button>
+    <button onclick="changeAppearance('former')">Former</button> </div>
+<div id="image-container"> <img src="user-submissions/goomdan.jpeg"> </div>
+<div class="infobox"><s>ew, poor</s></div> </div>
+  </div>
+<script> changeAppearance('current');
+function changeAppearance(appearance) {
+  const buttons = document.querySelectorAll('.appearance-buttons button');
+        buttons.forEach(btn => btn.classList.remove('pressed'));
+  const image = document.querySelector('#image-container img');
+       if (appearance === 'current') { image.src = 'user-submissions/goomdan.jpeg';
+} else if (appearance === 'former') { image.src = 'user-submissions/NrGoodevil_Former.png'; }
+  const pressedButton = Array.from(buttons).find(button => button.innerText.toLowerCase().includes(appearance)); pressedButton.classList.add('pressed'); }
+const audio = new Audio('https://nez.fyi/sml-assets/mrspookymen.ogg'); audio.loop = true; audio.play();
+</script> </body> </html>
+<script> fetch('../global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html> <head> <link rel="icon" type="image/png" href="../global/favicon.png"> <meta charset="UTF-8"> <meta name="robots" content="noindex"> <title>Dr. Finkleshitz - smlwiki.com</title> <meta name="description" content="Fredrick Finkleshitz is a human doctor character played by Pablo. He is a crazed scientist who preforms often questionable experiments, typically involving aliens. He is sometimes seen hosting his own…"/> </head> 
+<html lang="en"> <link rel="preload" href="character_pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="character_pages.css"></noscript> <style> #authorsign { position: absolute; bottom: 3px; right: 3px; font-size: 13px; font-weight: bold; font-style: italic; color: #756a; font-family: Consolas; text-align: right; } #authorsign:hover { color: #765; } </style>
+<style> .gallery { white-space: nowrap; width: 128px; height: 128px; display: inline-block; } .gallery img { margin-right: 23px; border: solid 1px; width: 198px; height: 208px; } iframe { transition: ease-out 180ms; } iframe:hover { opacity: 0.6; }  </style>
+
+<body> <div id="header-container"></div>
+  <div id="container"><div id="text-content">
+    <h1 style="padding-bottom: 42px; border-bottom: solid 1px #500;">Dr. Fredrick Finkleshitz</h1>
+        <div class="text-entry">
+                <h2>About</h2>
+                <p>Dr. <span id="fingertits">Fingertits</span> was one of the few people not listed as an escapee to have survived the day of imbalance with minimal harm done to him. After waking up from a coma and seeing the world he once knew all fucked up, he knew that it was his job to fix everything that the Day of Imbalance has caused.</p>
+            </div>
+        <div class="text-entry">
+                <h2>Experiments</h2>
+                <p>Dr. Fingerballs went around capturing the random entities with cages and beartraps set around the main neighborhood. He then took these entities to his lab and experimented on them. His ultimate goal was to reverse the effects of the Day of Imbalance. He unfortunately died after running an experiment on something too dangerous for him. Some speculate that he mistakenly locked eyes with Braxton Jr.</p>
+            </div>
+        <div class="text-entry">
+                <h2>Facebook</h2>
+                <p>Dr. Fuiongleraltzerousniousbusonarjigglusbigglusflumpedupcrumpus had a facebook page, which can be found here: <a href="https://www.facebook.com/drfinkleshitz/">facebook.com/drfinkleshitz</a></p>
+            </div>
+    <span id="authorsign">Page submitted by 'octoisalive <span style="color: #446">[Admin]</span>' & 'deathofserenity <span style="color: #446">[Admin]</span>'</span>
+                        </div>
+<div id="image-frame"> <div class="textbox">Appearance:</div> <div class="appearance-buttons">
+    <button onclick="changeAppearance('current')">Current</button>
+    <button onclick="changeAppearance('former')">Former</button> </div>
+<div id="image-container"> <img src="crack.jpg"> </div>
+<div class="infobox">Factor Binglefitz after making meth</div> </div>
+  </div>
+<script> changeAppearance('former'); const fingertits = new Audio('https://nez.fyi/sml-assets/fingertits.ogg'); document.getElementById('fingertits').addEventListener('mouseenter', function () { fingertits.play(); });
+function changeAppearance(appearance) {
+  const buttons = document.querySelectorAll('.appearance-buttons button');
+        buttons.forEach(btn => btn.classList.remove('pressed'));
+  const image = document.querySelector('#image-container img');
+       if (appearance === 'current') { image.src = 'user-submissions/maxresdefault.jpeg';
+} else if (appearance === 'former') { image.src = 'crack.jpg'; }
+  const pressedButton = Array.from(buttons).find(button => button.innerText.toLowerCase().includes(appearance)); pressedButton.classList.add('pressed'); }
+</script> </body> </html>
+
+<iframe src="https://www.youtube.com/embed/Yh5-tdH6Cew&list?loop=1&modestbranding=1&rel=0&fs=0&playlist=Yh5-tdH6Cew&autoplay=1&start=0&end=72" width="350" height="263" frameborder="0" style="position:fixed;right:0;bottom:0;scale:0.8;"></iframe>
+
+<script> fetch('../global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>
