@@ -1,0 +1,87 @@
+<!DOCTYPE html> <meta charset="UTF-8"> <meta name="robots" content="noindex"> <title>Achievements - smlwiki.com</title> <style> body { margin: 0; overflow: hidden; } html { overflow: hidden; background: #000; width: 628px; height: 100%; border: solid 1px #222; } * { user-select: none; transition: cubic-bezier(.17,.64,.26,.99) 128ms; } *:hover { color: #eef; opacity: 1 !important; } 
+.ach { position: relative; width: 290px; height: 64px; padding: 3px; margin: 1px 2px 3px 4px; border: solid 1px #223;  border-radius: 3px; background: linear-gradient(#334, #111); display: flex; flex-direction: row; } .ach:hover { box-shadow: 0 1px 8px 3px #669a, inset #99e3 2px 6px 13px 3px; } .ach:hover img { transform: translateY(-2px); filter: brightness(1.1) saturate(1.1); } .ach:hover .progress { opacity: 1; } 
+.ach img { width: 64px; margin-right: 8px; } .adetails { display: flex; flex-direction: column; font-family: Arial; color: #ddd; margin-top: 6px; } .atitle { font-weight: 600; font-size: 15px; border-bottom: solid 1px #3354; } .adesc { margin-top: 2px; line-height: 15px; font-weight: 300; font-size: 12px; opacity: 0.8; }
+#front { overflow-y: scroll; height: calc(100% - 30px); position: fixed; } #achheader { background: #112; box-shadow: inset #000 3px 3px 13px, inset #456 -3px 4px 12px; border-bottom: solid 1px #223; display: flex; justify-content: space-between; color: #bbc; padding-left: 4px; padding-right: 4px; }
+.locked { filter: saturate(0) brightness(0.8); pointer-events: none; } .locktext { color: #aaaa; font-style: italic; } .no-right-click { width: 100%; height: 100%; position: absolute; left: 1; top: 1; cursor: no-drop;} @keyframes unlock { 0% { filter: brightness(1.3); box-shadow: 0 1px 24px 6px #669a, inset #99e3 2px 6px 13px 3px; } 100% { filter: unset; box-shadow: unset; } }
+.ach:after { content: ''; z-index: 2; width: 100%; height: 100%; position: absolute; background-image: url('unlocked.png'); background-repeat: no-repeat; background-position: 274px 1px; background-size: 17px 16px; opacity: 0.3; } .ach:hover:after { opacity: 0.7; } .locked:after { content: ''; z-index: 2; width: 100%; height: 100%; position: absolute; background-image: url('locked.png') !important; background-repeat: no-repeat; background-position: 275px 0px; background-size: 17px 16px; }
+.pbar { position: relative; display: inline; background: #000; border-bottom: solid 1px #333;width: 196px; height: 5px; margin-top: 5px; } .progress { width: 0%; height: 5px; background: #8c4; opacity: 0.8; transition: linear 64ms; }
+</style> <div style="height: 26px;" id="achheader">
+ <span style="font-size: 14px; font-weight: 600; font-family: Arial; line-height: 24px;">ACHIEVEMENTS</span>
+<div>
+ <span style="font-size: 17px; font-weight: 600; font-family: Arial; line-height: 24px; opacity: 0.7;" id="totalach">0/18</span><span><img src="/images/unlocked.png" height="20" style="margin-bottom: -3px;"></span>
+</div> </div> <div id="front">
+
+ <div style="display: flex;">
+<div class="ach locked" id="adv01"><img src="/images/ach_lo-mailchecker.png"><div class="adetails">
+  <span class="atitle">Postal</span>
+ <span class="adesc">You do as you're told.</span></div></div>
+<div class="ach locked" id="adv14"><img src="/images/ach_lo-characters.png"><div class="adetails">
+  <span class="atitle">Light reading</span>
+ <span class="adesc">Discover the character pages.</span></div></div>
+ </div>
+ <div style="display: flex;">
+<div class="ach locked" id="adv02"><img src="/images/ach_lo-laptop.png"><div class="adetails">
+  <span class="atitle">Fuck it, we surf</span>
+ <span class="adesc">Find a laptop and access the internet.</span></div></div>
+<div class="ach locked" id="adv13"><img src="/images/ach_lo-guy.png"><div class="adetails">
+  <span class="atitle">Guy whisperer</span>
+ <span class="adesc">Share or save a Guy.</span></div></div>
+ </div>
+ <div style="display: flex;">
+<div class="ach locked" id="adv04"><img src="/images/ach_lo-findbrookie.png"><div class="adetails">
+  <span class="atitle">Find Brooklyn Guy!</span>
+ <span class="adesc">Find Brooklyn Guy.</span></div></div>
+<div class="ach locked" id="adv06"><img src="/images/ach_lo-clickbart.png"><div class="adetails">
+  <span class="atitle">Click the Bart</span>
+ <span class="adesc">Click the Bart.</span></div></div>
+ </div>
+ <div style="display: flex;">
+<div class="ach locked" id="adv16"><img src="/images/ach_lo-phone.png"><div class="adetails">
+  <span class="atitle">There's nobody here</span>
+ <span class="adesc">Try to make a call from the phone inside the new house.</span></div></div>
+ <div class="ach locked" id="adv17"><img src="/images/ach_lo-seven.png"><div class="adetails">
+    <span class="atitle">Knock, knock?</span>
+ <span class="adesc locktext">You need to unlock this first.</span></div></div>
+ </div>
+ <div style="display: flex;">
+<div class="ach locked" id="adv03"><img src="/images/ach_lo-meetcharleyy.png"><div class="adetails">
+  <span class="atitle">Charleyyy's biggest fan</span>
+ <span class="adesc">You fell for it.</span></div></div>
+<div class="ach locked" id="adv18"><img src="/images/ach_lo-joke.png"><div class="adetails">
+  <span class="atitle">Knock, knock!</span> <script>/*this is just regular code. please play fair and go away*/ bleep=new Audio("notif.ogg"),document.addEventListener("contextmenu",e=>{e.preventDefault(),document.body.classList.add("no-right-click"),setTimeout(()=>{document.body.classList.remove("no-right-click")},1024)});const incii={adv01:{title:"postal",st:null},adv02:{title:"compvis",st:null},adv03:{title:"charlvis",st:null},adv04:{title:"bgkill",st:null},adv05:{title:"trespass",st:null},adv06:{title:"bartclicked",st:null},adv07:{title:"mdnverse",st:null},adv08:{title:"reward",st:null},adv09:{title:"pitf",st:null},adv10:{title:"boxvis",st:null},adv11:{title:"ecvis",st:"Enrich yourself to the (almost) fullest extent…"},adv12:{title:"te",st:"Find and read the secret note during Ending C."},adv13:{title:"guys",st:null},adv14:{title:"charvis",st:null},adv15:{title:"allcodes",st:"Locate every single terus code."},adv16:{title:"phonen",st:null},adv17:{title:"seven",st:"Find the secret in the Episodes page."},adv18:{title:"funny",st:null}},codes=["code1","code2","code3","code4","code5","code6","code7","code8","code9","code10","code11","code12","code13","code14","code15"];function add15(){let e=codes.length,t=0;codes.forEach(e=>{"true"===localStorage.getItem(e)&&t++});let l=t/e*100;document.querySelector("#p15 .progress").style.width=l+"%"}function observeLocalStorageChanges(){let e=e=>{codes.includes(e.key)&&add15()};window.addEventListener("storage",e)}function updatee(e){let t=incii[e];if(t&&t.title&&"true"===localStorage.getItem(t.title)){let l=document.getElementById(e);if(l){l.classList.remove("locked"),l.style.animation="unlock 423ms ease-out forwards",bleep.play();let i=l.querySelector("img");i&&(i.src=i.src.replace("ach_lo","ach_ul"));let s=l.querySelector(".adesc");s&&s.classList.contains("locktext")&&(t.st&&(s.textContent=t.st),s.classList.remove("locktext"));let n=Object.values(incii).filter(e=>"true"===localStorage.getItem(e.title)).length;document.getElementById("totalach").textContent=`${n}/18`,add15()}}}function cale(){Object.keys(incii).forEach(e=>{let t=incii[e];t&&t.title&&"true"===localStorage.getItem(t.title)&&updatee(e)}),Object.values(incii).filter(e=>"true"===localStorage.getItem(e.title)).length}observeLocalStorageChanges(),window.addEventListener("storage",e=>{Object.keys(incii).some(t=>e.key===incii[t].title)&&cale()}),window.addEventListener("DOMContentLoaded",()=>{cale()}),add15();</script>
+ <span class="adesc">Read every joke in the laptop terminal.</span></div></div>
+ </div>
+ <div style="display: flex;">
+<div class="ach locked" id="adv05"><img src="/images/ach_lo-contruc.png"><div class="adetails">
+  <span class="atitle">Under construction</span>
+ <span class="adesc">Try pulling back the curtain on something you're not supposed to see.</span></div></div>
+<div class="ach locked" id="adv15"><img src="/images/ach_lo-allcodes.png"><div class="adetails">
+  <span class="atitle">1337</span>
+ <span class="adesc locktext">You need to unlock this first.</span> <div class="pbar" id="p15"><div class="progress"></div></div> </div></div>
+ </div>
+ <div style="display: flex;">
+<div class="ach locked" id="adv07"><img src="/images/ach_lo-maddenverse.png"><div class="adetails">
+  <span class="atitle">Enter the Maddenverse</span>
+ <span class="adesc">Read about the Maddenverse and take the plunge.</span></div></div>
+<div class="ach locked" id="adv08"><img src="/images/ach_lo-endinga.png"><div class="adetails">
+  <span class="atitle">Ending A/B</span>
+ <span class="adesc">Enter the end.</span></div></div>
+ </div>
+ <div style="display: flex;">
+<div class="ach locked" id="adv09"><img src="/images/ach_lo-doll.png"><div class="adetails">
+  <span class="atitle">Dollthing</span>
+ <span class="adesc">Find a use for the doll.</span></div></div>
+<div class="ach locked" id="adv10"><img src="/images/ach_lo-key.png"><div class="adetails">
+  <span class="atitle">…</span>
+ <span class="adesc">Open the box.</span></div></div>
+ </div>
+ <div style="display: flex;">
+<div class="ach locked" id="adv11"><img src="/images/ach_lo-endingc.png"><div class="adetails">
+  <span class="atitle">Ending C</span>
+ <span class="adesc locktext">You need to unlock this first.</span></div></div>
+<div class="ach locked" id="adv12"><img src="/images/ach_lo-endingcsecret.png"><div class="adetails">
+  <span class="atitle">Rebirth</span>
+ <span class="adesc locktext">You need to unlock this first.</span></div></div>
+</div>
+
+</div>
