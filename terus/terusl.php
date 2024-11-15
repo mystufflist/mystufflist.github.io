@@ -56,4 +56,3 @@ var gameimagelist = ["aeth1.png", "aeth2.png", "aeth3.png", "aeth4.png", "trash2
         img.src = "/laptop/terus-frontend/texture/" + gameimagelist[i];
     } }
     
-
