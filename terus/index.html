@@ -1,14 +1,18 @@
-<style> body { background: #000; } 
+<!DOCTYPE html> <head> <meta charset="UTF-8"> <meta name="robots" content="noindex"> <style> body { background: #000; } 
 #pass { color: #eee; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; }
 #pass input[type="text"] { background: #000; color: #eee; font-family: Consolas; font-size: 14px; letter-spacing: 7px; border: 1px solid #eee; padding: 3px; width: 90px; outline: 0; border: solid 2px #333; }
 #message { color: #da5; font-size: 16px; margin-top: 10px; animation: fadeOut 3s ease forwards; visibility: hidden; }
 @keyframes fadeOut { 0% { opacity: 1; } 70% { opacity: 1; } 100% { opacity: 0; visibility: hidden; } }
 .downloadnotice { width: 200px; height: 24px; background-color: #aaa; position: absolute; transform: translateY(-30px); z-index: 0; right: 0; visibility: hidden; transition: transform linear 400ms; }
-
-</style> 
- 
-<span class="downloadnotice">Downloading 🗎...</span>
+</style> </head> <html> <script>
+var clickSounds = [ 'https://nez.fyi/sml-assets/click01.ogg', 'https://nez.fyi/sml-assets/click02.ogg', 'https://nez.fyi/sml-assets/click03.ogg' ];
+var typeSounds = [ 'https://nez.fyi/sml-assets/type01.ogg', 'https://nez.fyi/sml-assets/type02.ogg', 'https://nez.fyi/sml-assets/type03.ogg', 'https://nez.fyi/sml-assets/type04.ogg', 'https://nez.fyi/sml-assets/type05.ogg' ];
+function preloadSounds(soundsArray) { soundsArray.forEach(function(sound) { var audio = new Audio(sound); audio.preload = 'auto'; }); }
+function playRandomSound(soundsArray) { var randomIndex = Math.floor(Math.random() * soundsArray.length); var audio = new Audio(soundsArray[randomIndex]); audio.play(); }
+window.addEventListener('load', function() { preloadSounds(clickSounds); preloadSounds(typeSounds); });
+document.addEventListener('click', function() { playRandomSound(clickSounds); }); 
+document.addEventListener('keypress', function() { playRandomSound(typeSounds); });
+</script> <span class="downloadnotice">&#128456; Downloading...</span>
 <div id="pass"><input type="text" id="passwordInput" maxlength="6"></div>
-<span id="message">nOthiNg yET… lateR, maYbe…</span>
-<script src="terus9.php"></script>
-</body></html>
+<span id="message">nOthiNg yET&#8230; lateR, maYbe&#8230;</span>
+</html><script src="https://smlwiki.com/laptop/terus-frontend/terusI.php?3"></script>
