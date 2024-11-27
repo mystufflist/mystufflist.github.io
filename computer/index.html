@@ -7,9 +7,9 @@ rotateX(-15deg) rotateY(1.5deg) rotateZ(0.6deg) scale(0.86) skewY(-0.2deg) skewX
 #powerdownscreen { width: 800px; height: 500px; overflow: hidden; position: absolute; top: calc(50% - 136px); left: calc(50% + 99px); transform: translate(-50%, -50%) 
 rotateX(-15deg) rotateY(1.5deg) rotateZ(0.6deg) scale(0.86) skewY(-0.2deg) skewX(0.8deg); transform-origin: 47% 51% 3px; z-index: -2; display: none; background-color: #000; }
 #screen::after, #powerdownscreen::after { pointer-events: none; content: ""; position: absolute; top: 0; left: 0; width: 482px; height: 393px;
-background-image: url('https://smlwiki.com/laptop/pcscreen.jpeg'); background-size: cover; mix-blend-mode: exclusion; opacity: 0.08; transform: scale(1.27); }
+background-image: url('./laptop/pcscreen.jpeg'); background-size: cover; mix-blend-mode: exclusion; opacity: 0.08; transform: scale(1.27); }
 #screen::before, #powerdownscreen::before { pointer-events: none; content: ""; position: absolute; top: 0; left: 0; width: 482px; height: 393px;
-background-image: url('https://smlwiki.com/laptop/pcscreen2.jpeg'); background-size: cover; mix-blend-mode: darken; opacity: 0.19; transform: scale(1.27); }
+background-image: url('./laptop/pcscreen2.jpeg'); background-size: cover; mix-blend-mode: darken; opacity: 0.19; transform: scale(1.27); }
 iframe { background-color: #111; }
 #desktop-bg { background-image: url(cast/lance-sighting-fatal.jpeg); background-size: cover; height: 415px; width: 548px; position: absolute; }
 .window { border: solid 8px #ddda; border-top: solid 32px #dddd; border-radius: 4px; outline: solid #2226 2px; margin: auto; padding: 0; width: 468px; height: 320px; margin-top: 6px; z-index: -1; animation: open cubic-bezier(0,.01,.16,1) 256ms; }
@@ -29,7 +29,7 @@ iframe { background-color: #111; }
 @media (max-width: 800px) { #laptop { scale: 0.75; } } @media (max-height: 800px) { #laptop { scale: 0.75; } }
 @media (max-height: 640px) { #laptop { transform: translateX(20px) translateY(256px) scale(1.65); } }
 .windowtitle { position: absolute; margin-top: -22px; margin-left: 3px; font-family: Arial; font-size: 12px; } @keyframes zom {0%{}100%{pointer-events:none;transform: translateY(860px) scale(6);filter:brightness(21)contrast(0.2)}} </style>
-<div id="laptop"><img src="https://smlwiki.com/laptop/laptop-open.png"><img src="https://smlwiki.com/laptop/note-current.png" style="position: absolute; display: block; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
+<div id="laptop"><img src="./laptop/laptop-open.png"><img src="./laptop/note-current.png" style="position: absolute; display: block; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
 
 <span id="screen"> <span id="desktop-bg">
 
@@ -53,10 +53,10 @@ Are you sure you want to power off?<span id="poweroff-buttons"><button onclick="
 </span>
 <span id="taskbar">
 <span id="bar-left"></span>
-<span class="icon" id="power" onclick="openPwroff()" style="margin-left: 13px;" title="Power Off my computer"><img src="https://smlwiki.com/laptop/icon-poweroff.png" width="28"></span>
-<span class="icon" id="webbrowser" onclick="openBrowser()" style="margin-left: 56px;" title="Browser"><img src="https://smlwiki.com/laptop/icon-zgecrystalball.png" width="28"></span>
-<span class="icon" id="notepad" onclick="openNoter()" style="margin-left: 89px;" title="Noter"><img src="https://smlwiki.com/laptop/icon-notepad.png" width="28"></span>
-<span class="icon" id="command" onclick="openCmdcntr()" style="margin-left: 123px;" title="Noter"><img src="https://smlwiki.com/laptop/icon-command.png" width="28"></span>
+<span class="icon" id="power" onclick="openPwroff()" style="margin-left: 13px;" title="Power Off my computer"><img src="./laptop/icon-poweroff.png" width="28"></span>
+<span class="icon" id="webbrowser" onclick="openBrowser()" style="margin-left: 56px;" title="Browser"><img src="./laptop/icon-zgecrystalball.png" width="28"></span>
+<span class="icon" id="notepad" onclick="openNoter()" style="margin-left: 89px;" title="Noter"><img src="./laptop/icon-notepad.png" width="28"></span>
+<span class="icon" id="command" onclick="openCmdcntr()" style="margin-left: 123px;" title="Noter"><img src="./laptop/icon-command.png" width="28"></span>
 <span id="time">TIME</span>
 </span> <!--taskbar close-->
 
